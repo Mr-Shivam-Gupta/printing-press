@@ -15,6 +15,7 @@ class Admin extends CI_Controller
     $data['page_name'] = 'dashboard';
     $this->load->view('admin/index', $data);
   }
+
   public function  DesignType($id = Null)
   {
     $data['edit'] = "";
@@ -66,40 +67,50 @@ class Admin extends CI_Controller
       echo "Please fill all fields ";
     }
   }
-  public function DtypeEdit($id){
+  public function DtypeEdit($id) {
     if ($this->input->post()) {
-      $this->form_validation->set_rules('Dtype','Dtype','trim|required');
-      $this->form_validation->set_rules('url','url','trim|required');
-      
-      if ($this->form_validation->run() == false) {
-        echo" validation error";
-      }else{
-        $type = $this->input->post('Dtype');
-        $url = $this->input->post('url');
-        $checkType =$this->db->where(['type'=> $type])->where_not_in(['id'=>$id])->get('design_tbl')->num_rows();
-        $checkUrl =$this->db->where(['type'=> $url])->where_not_in(['id'=>$id])->get('design_tbl')->num_rows();
-        if ($checkType > 0) {
-          echo "This design type already exist!";
+        $this->form_validation->set_rules('Dtype', 'Dtype', 'trim|required');
+        $this->form_validation->set_rules('url', 'url', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            echo "Validation error";
         } else {
-          if ($checkUrl > 0) {
-            echo "This Url already exist!";
-          }else{
-            $formData = [
-              'type' => $type,
-              'url' => $url
-            ];
-            $dbSubmit = $this->Printing_model->DtypeEdit('design_tbl',$id, $formData);
-            if ($dbSubmit == true) {
-              echo "1";
+            $type = $this->input->post('Dtype');
+            $url = $this->input->post('url');
+
+            // Check if the new 'type' already exists except for the current record.
+            $checkType = $this->db->where(['type' => $type])->where_not_in('id', $id)->get('design_tbl')->num_rows();
+
+            // Check if the new 'url' already exists except for the current record.
+            $checkUrl = $this->db->where(['url' => $url])->where_not_in('id', $id)->get('design_tbl')->num_rows();
+
+            if ($checkType > 0) {
+                echo "This design type already exists!";
+            } else if ($checkUrl > 0) {
+                echo "This URL already exists!";
+            } else {
+                $formData = [
+                    'type' => $type,
+                    'url' => $url
+                ];
+                // Assuming DtypeEdit is a function to update the database record.
+                $dbSubmit = $this->Printing_model->DtypeEdit('design_tbl', $id, $formData);
+                if ($dbSubmit) {
+                    echo "1";
+                } else {
+                    echo "Error updating the record.";
+                }
             }
-          }
         }
-      }
-      
-    }else {
-      echo "Please fill all fields ";
+    } else {
+        echo "Please fill all fields";
     }
-  }
+}
+
+public function DeleteDesignType($id){
+  $this->db->where(['id'=>$id])->delete('design_tbl');
+  redirect('design-type');
+}
   public function upload($id = Null)
   {
       $data['edit'] = "";

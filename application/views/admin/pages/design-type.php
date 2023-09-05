@@ -20,7 +20,7 @@
                         <div class="col-6">
                         <div class="form-group">
                         <label >Url</label>
-                        <input type="text" class="form-control" name="url" value="<?php echo $desList->url;?>" placeholder="Ex. Poster-design">
+                        <input type="text" class="form-control" name="url" value="<?php echo $desList->url;?>" placeholder="Ex. Poster-design" oninput="formatInput(this)">
                         </div>
                         </div>
                      </div>
@@ -42,7 +42,7 @@
                         <div class="col-6">
                         <div class="form-group">
                         <label >Url</label>
-                        <input type="text" class="form-control" name="url" placeholder="Ex. Poster-design">
+                        <input type="text" class="form-control" name="url" placeholder="Ex. Poster-design" oninput="formatInput(this)">
                         </div>
                         </div>
                      </div>
@@ -80,7 +80,7 @@
                      <a href="<?php echo base_url(); ?>Admin/EditDesignType/<?php echo $data['id']; ?>"><button type="button"
                         class="btn  bg-gradient-primary"><i
                         class="fas fa-edit"></i> Edit</button></a>
-                     <a href="<?php echo base_url(); ?>/<?php echo $data['id']; ?>"
+                        <a href="<?php echo base_url(); ?>Admin/DeleteDesignType/<?php echo $data['id']; ?>"
                         class="btn bg-gradient-danger delete-button" >
                      <i class="fa fa-trash"></i> Delete
                      </a>
@@ -95,8 +95,35 @@
 </section>
 
 <script>
+   function formatInput(input) {
+  const inputValue = input.value.toLowerCase();
+  const formattedValue = inputValue.replace(/[^a-z0-9-]/g, '-');
+  input.value = formattedValue;
+}
      $(document).ready(function () {
+      
+      $(".delete-button").click(function(event) {
+               event.preventDefault(); // Prevent the default link behavior
    
+               var deleteLink = $(this).attr('href');
+   
+               Swal.fire({
+                   title: "Confirmation",
+                   text: "Are you sure you want to delete this image?",
+                   icon: "warning",
+                   showCancelButton: true,
+                   confirmButtonColor: "#3085d6",
+                   cancelButtonColor: "#d33",
+                   confirmButtonText: "Yes, delete it!",
+               }).then((result) => {
+                   if (result.isConfirmed) {
+                       // Redirect to the captured href link
+                       window.location.href = deleteLink;
+                   }
+               });
+           });
+       });
+
    $("#DtypeSubmit").submit(function (e) {
        e.preventDefault();
        $.ajax({
@@ -189,5 +216,5 @@
            }
        });
    });
-   });
+
 </script>

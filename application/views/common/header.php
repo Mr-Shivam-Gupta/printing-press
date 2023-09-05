@@ -49,7 +49,7 @@
                                 <div class="sc_content_container">
                                     <div class="sc_layouts_item">
                                         <a href="<?php echo base_url('');?>" class="sc_layouts_logo sc_layouts_logo_default">
-                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>photos/logo.png" alt="logo">
+                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>logo.jpg" alt="logo">
                                         </a>
                                     </div>
                                 </div>
@@ -180,11 +180,14 @@
                                                 <span>Designs</span>
                                             </a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Style 1</span>
-                                                    </a>
-                                                </li>
+                                                <!-- <li class="menu-item">
+                                                    <?php foreach ($manu as $manu) { ?>
+                                                       
+                                                        <a href="<?php echo base_url('design/');echo $manu['url'];?> ">
+                                                            <span><?php echo $manu['type'];?></span>
+                                                        </a>
+                                                        <?php }?>
+                                                </li> -->
                                             </ul>
                                             
                                         </li>

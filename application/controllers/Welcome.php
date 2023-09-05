@@ -13,15 +13,24 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('index');
+		$data['manu'] = $this->db->get('design_tbl')->result_array();
+		$this->load->view('index',$data);
 	}
 	public function designs()
 	{
-		$this->load->view('designs');
+		$data['manu'] = $this->db->get('design_tbl')->result_array();
+		$this->load->view('designs', $data);
+	}
+	
+	public function DesignsDetails($segment)
+	{
+		$data['urlDetails'] = $this->db->get_where('design_tbl', array('url' => $segment))->result_array();
+		$this->load->view('designs-details', $data);
 	}
 	public function contact()
 	{
-		$this->load->view('contact');
+		$data['manu'] = $this->db->get('design_tbl')->result_array();
+		$this->load->view('contact',$data);
 	}
 	public function login()
 	{
