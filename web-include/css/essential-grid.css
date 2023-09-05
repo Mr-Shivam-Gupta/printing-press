@@ -1,0 +1,364 @@
+.minimal-light .navigationbuttons,
+.minimal-light .esg-pagination,
+.minimal-light .esg-filters {
+    text-align: center
+}
+.minimal-light .esg-filterbutton,
+.minimal-light .esg-navigationbutton,
+.minimal-light .esg-sortbutton,
+.minimal-light .esg-cartbutton a {
+    color: #999;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 0 16px;
+    border: 1px solid #e5e5e5;
+    line-height: 38px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 5px
+}
+.minimal-light .esg-navigationbutton * {
+    color: #999
+}
+.minimal-light .esg-navigationbutton {
+    padding: 0 16px
+}
+.minimal-light .esg-pagination-button:last-child {
+    margin-right: 0
+}
+.minimal-light .esg-left,
+.minimal-light .esg-right {
+    padding: 0 11px
+}
+.minimal-light .esg-sortbutton-wrapper,
+.minimal-light .esg-cartbutton-wrapper {
+    display: inline-block
+}
+.minimal-light .esg-sortbutton-order,
+.minimal-light .esg-cartbutton-order {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+    width: 40px;
+    line-height: 38px;
+    border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    cursor: pointer;
+    background: #fff
+}
+.minimal-light .esg-cartbutton {
+    color: #333;
+    cursor: default !important
+}
+.minimal-light .esg-cartbutton .esgicon-basket {
+    color: #333;
+    font-size: 15px;
+    line-height: 15px;
+    margin-right: 10px
+}
+.minimal-light .esg-cartbutton-wrapper {
+    cursor: default !important
+}
+.minimal-light .esg-sortbutton,
+.minimal-light .esg-cartbutton {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 0;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px
+}
+.minimal-light .esg-navigationbutton:hover,
+.minimal-light .esg-filterbutton:hover,
+.minimal-light .esg-sortbutton:hover,
+.minimal-light .esg-sortbutton-order:hover,
+.minimal-light .esg-cartbutton a:hover,
+.minimal-light .esg-filterbutton.selected {
+    background-color: #fff;
+    border-color: #bbb;
+    color: #333;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.13)
+}
+.minimal-light .esg-navigationbutton:hover * {
+    color: #333
+}
+.minimal-light .esg-sortbutton-order.tp-desc:hover {
+    border-color: #bbb;
+    color: #333;
+    box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.13) !important
+}
+.minimal-light .esg-filter-checked {
+    padding: 1px 3px;
+    color: #cbcbcb;
+    background: #cbcbcb;
+    margin-left: 7px;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 9px;
+    vertical-align: middle
+}
+.minimal-light .esg-filterbutton.selected .esg-filter-checked,
+.minimal-light .esg-filterbutton:hover .esg-filter-checked {
+    padding: 1px 3px 1px 3px;
+    color: #fff;
+    background: #000;
+    margin-left: 7px;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 9px;
+    vertical-align: middle
+}
+.eg-washington-copypress-element-3 {
+    width: calc(100% - 150px);
+    text-align: left
+}
+.esg-grid .eg-washington-copypress-container {
+    background-color: transparent;
+    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%)
+}
+.eg-washington-copypress-element-1 {
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff !important;
+    font-weight: 400;
+    padding: 14px 11px 14px 11px;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: auto;
+    width: auto;
+    z-index: 2;
+    display: block;
+    border: 2px solid #ffffff !important;
+}
+.eg-washington-copypress-element-3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    display: inline-block;
+    float: left;
+    clear: none;
+    margin: 0 120px 40px 40px;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    z-index: 2 !important;
+    font-family: "Gilroy";
+}
+.eg-washington-copypress-container {
+    background-color: rgba(0, 0, 0, 0.65)
+}
+.eg-washington-copypress-element-1:hover {
+    font-size: 20px;
+    line-height: 22px;
+    color: #e947a5 !important;
+    font-weight: 400;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 1.00) !important;
+    border: 2px solid #ffffff !important;
+}
+.eg-washington-copypress-element-1-a {
+    display: inline-block;
+    float: right;
+    clear: none;
+    margin: 0 40px 40px 0;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important
+}
+.eg-washington-copypress-content {
+    background-color: #ffffff;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    border-color: transparent;
+    border-style: double;
+    text-align: left
+}
+.esg-grid .mainul li.eg-washington-copypress-wrapper {
+    background-color: #3f424a;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    border-color: transparent;
+    border-style: none
+}
+.esg-grid .mainul li.eg-washington-copypress-wrapper .esg-media-poster {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.eg-hayes-copypress-element-0 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363839 !important;
+    font-weight: 600;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 1.00) !important;
+    z-index: 2;
+    display: block;
+    font-family: "Gilroy";
+    text-transform: capitalize;
+}
+.eg-hayes-copypress-element-1 {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7f818d !important;
+    font-weight: 300;
+    display: inline-block;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 1.00) !important;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+    border-width: 0 1px 0 0;
+    border-color: #aaaaaa !important;
+    border-style: solid;
+}
+.eg-hayes-copypress-element-2 {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7f818d !important;
+    font-weight: 300;
+    padding: 0 10px 0 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 1.00) !important;
+    z-index: 2;
+    text-transform: capitalize;
+    border: 0 solid transparent!important;
+}
+.eg-hayes-copypress-element-0:hover {
+    font-size: 18px;
+    line-height: 25px;
+    color: #e947a5 !important;
+    font-weight: 600;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 1.00) !important;
+    font-family: "Gilroy";
+    text-transform: capitalize;
+}
+.eg-hayes-copypress-element-0-a {
+    display: block;
+    text-align: left;
+    clear: both;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+.eg-hayes-copypress-element-2-a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7f818d !important;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    float: left;
+    clear: none;
+    margin: 0 0 0 10px;
+    position: relative;
+}
+.eg-hayes-copypress-container {
+    background-color: rgba(54, 56, 57, 0.85)
+}
+.eg-hayes-copypress-content {
+    background-color: #ffffff;
+    padding: 30px 30px 40px 30px;
+    border-width: 0;
+    border-radius: 0;
+    border-color: transparent;
+    border-style: double;
+    text-align: left
+}
+.esg-grid .mainul li.eg-hayes-copypress-wrapper {
+    background-color: #ffffff;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    border-color: transparent;
+    border-style: none
+}
+.esg-grid .mainul li.eg-hayes-copypress-wrapper .esg-media-poster {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.esg-grid{
+    background-color: transparent;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.esg-filters.esg-singlefilters{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.esg-filter-wrapper.esg-fgc-1,
+.esg-filter-wrapper.esg-fgc-2{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.esg-none.esg-clear{
+    height: 5px !important;
+    visibility: hidden !important;
+}
+.flat-light .esg-filters .esg-sortbutton-order, .flat-light .esg-filters .esg-cartbutton-order {
+    line-height: 36px;
+    margin: 0;
+}
+.flat-light .esg-filters .esg-sortbutton {
+    padding-right: 0;
+}
+.minimal-light .esg-grid .esg-filterbutton, .minimal-light .esg-grid .esg-navigationbutton,
+.minimal-light .esg-grid .esg-sortbutton, .minimal-light .esg-grid .esg-cartbutton a {
+    padding: 0 1.61em;
+    border: none;
+    box-shadow: none !important;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 1.61em;
+    -moz-border-radius: 1.61em;
+    -webkit-border-radius: 1.61em;
+    font-size: 0.866em;
+    margin-left: 10px;
+}
+.minimal-light .esg-grid .esg-filterbutton:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #e9ebef;
+}
+.eg-washington-copypress-element-3 {
+    width: calc(100% - 150px);
+    text-align: left;
+}
+.esg-grid .eg-washington-copypress-container {
+    background-color: transparent;
+    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+}
+.esg-grid .eg-washington-copypress-element-1-a {
+    z-index: 5;
+}

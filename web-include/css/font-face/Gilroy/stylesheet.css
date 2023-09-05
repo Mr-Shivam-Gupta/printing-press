@@ -1,0 +1,47 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Radomir Tinkov
+ * License URL: https://www.fontspring.com/licenses/radomir-tinkov/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy-extrabold-webfont.eot');
+    src: url('gilroy-extrabold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('gilroy-extrabold-webfont.woff') format('woff'),
+         url('gilroy-extrabold-webfont.ttf') format('truetype'),
+         url('gilroy-extrabold-webfont.svg#gilroyextrabold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy-light-webfont.eot');
+    src: url('gilroy-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('gilroy-light-webfont.woff2') format('woff2'),
+         url('gilroy-light-webfont.woff') format('woff'),
+         url('gilroy-light-webfont.ttf') format('truetype'),
+         url('gilroy-light-webfont.svg#gilroylight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}

@@ -1,0 +1,15 @@
+
+
+@font-face {
+    font-family: 'Sofia Pro Light';
+    src: url('sofiapro-light-webfont.eot');
+    src: url('sofiapro-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('sofiapro-light-webfont.woff2') format('woff2'),
+         url('sofiapro-light-webfont.woff') format('woff'),
+         url('sofiapro-light-webfont.ttf') format('truetype'),
+         url('sofiapro-light-webfont.svg#sofia_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

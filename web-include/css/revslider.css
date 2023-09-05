@@ -1,0 +1,184 @@
+
+#rev_slider_1_1_wrapper{
+    margin:0 auto;
+    background-color:transparent;
+    padding:0;
+}
+#slide-1-layer-1{
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(252, 214, 60, 1.00);
+    font-family:"PermanentMarker";
+}
+#slide-1-layer-2{
+    z-index: 6;
+    white-space: nowrap;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+}
+#slide-1-layer-3{
+    z-index: 7;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Sofia Pro Light";
+    letter-spacing:0.02em;
+}
+#slide-1-layer-4{
+    z-index: 9;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-1-layer-5{
+    z-index: 8;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    background-color:rgba(252, 214, 60, 1.00);
+    border-radius:40px 40px 40px 40px;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-1-layer-7{
+    z-index: 10;
+}
+
+/* Slide 2 */
+#slide-2-layer-1{
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(252, 214, 60, 1.00);
+    font-family:"PermanentMarker";
+}
+#slide-2-layer-2{
+    z-index: 6;
+    white-space: nowrap;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+}
+#slide-2-layer-3{
+    z-index: 7;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Sofia Pro Light";
+    letter-spacing:0.02em;
+}
+#slide-2-layer-4{
+    z-index: 9;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-2-layer-5{
+    z-index: 8;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    background-color:rgba(252, 214, 60, 1.00);
+    border-radius:40px 40px 40px 40px;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-2-layer-7{
+    z-index: 10;
+}
+
+/* Slide 3 */
+#slide-4-layer-1{
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(252, 214, 60, 1.00);
+    font-family:"PermanentMarker";
+}
+#slide-4-layer-2{
+    z-index: 6;
+    white-space: nowrap;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+}
+#slide-4-layer-3{
+    z-index: 7;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Sofia Pro Light";
+    letter-spacing:0.02em;
+}
+#slide-4-layer-4{
+    z-index: 9;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-4-layer-5{
+    z-index: 8;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 55px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1.00);
+    font-family:"Gilroy";
+    text-transform:uppercase;
+    background-color:rgba(252, 214, 60, 1.00);
+    border-radius:40px 40px 40px 40px;
+    letter-spacing:0.2em;
+    cursor:pointer;
+}
+#slide-4-layer-7{
+    z-index: 10;
+}
+.tp-bannertimer.tp-bottom{
+    visibility: hidden !important;
+}
