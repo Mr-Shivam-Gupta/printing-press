@@ -61,5 +61,6 @@ $route['designs'] = 'welcome/designs';
 
 $route['admin-dashboard'] = 'admin';
 $route['upload'] = 'admin/upload';
+$route['design-type'] = 'admin/DesignType';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

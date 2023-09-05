@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>AdminLTE 3 | Dashboard</title>
+      <title> Dashboard</title>
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/fontawesome-free/css/all.min.css">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -15,6 +15,18 @@
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/daterangepicker/daterangepicker.css">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/summernote/summernote-bs4.min.css">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/dropzone/min/dropzone.min.css">
+
+      <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+      <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+
+      <script src="<?php echo base_url('web-include/admin/');?>plugins/jquery/jquery.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js" integrity="sha256-S/HO+Ru8zrLDmcjzwxjl18BQYDCvFDD7mPrwJclX6U8=" crossorigin="anonymous"></script>
+
+      
       <script nonce="41811315-e252-4064-a709-c657409c672c">(function(w,d){!function(db,dc,dd,de){db[dd]=db[dd]||{};db[dd].executed=[];db.zaraz={deferred:[],listeners:[]};db.zaraz.q=[];db.zaraz._f=function(df){return async function(){var dg=Array.prototype.slice.call(arguments);db.zaraz.q.push({m:df,a:dg})}};for(const dh of["track","set","debug"])db.zaraz[dh]=db.zaraz._f(dh);db.zaraz.init=()=>{var di=dc.getElementsByTagName(de)[0],dj=dc.createElement(de),dk=dc.getElementsByTagName("title")[0];dk&&(db[dd].t=dc.getElementsByTagName("title")[0].text);db[dd].x=Math.random();db[dd].w=db.screen.width;db[dd].h=db.screen.height;db[dd].j=db.innerHeight;db[dd].e=db.innerWidth;db[dd].l=db.location.href;db[dd].r=dc.referrer;db[dd].k=db.screen.colorDepth;db[dd].n=dc.characterSet;db[dd].o=(new Date).getTimezoneOffset();if(db.dataLayer)for(const dp of Object.entries(Object.entries(dataLayer).reduce(((dq,dr)=>({...dq[1],...dr[1]})),{})))zaraz.set(dp[0],dp[1],{scope:"page"});db[dd].q=[];for(;db.zaraz.q.length;){const ds=db.zaraz.q.shift();db[dd].q.push(ds)}dj.defer=!0;for(const dt of[localStorage,sessionStorage])Object.keys(dt||{}).filter((dv=>dv.startsWith("_zaraz_"))).forEach((du=>{try{db[dd]["z_"+du.slice(7)]=JSON.parse(dt.getItem(du))}catch{db[dd]["z_"+du.slice(7)]=dt.getItem(du)}}));dj.referrerPolicy="origin";dj.src="<?php echo base_url('web-include/admin/');?>/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(db[dd])));di.parentNode.insertBefore(dj,di)};["complete","interactive"].includes(dc.readyState)?zaraz.init():db.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
    </head>
    <body class="hold-transition sidebar-mini layout-fixed">
@@ -166,10 +178,19 @@
                      </a>
                   </li>
                   <li class="nav-item">
-                  <a href="<?php echo base_url('upload');?>" class="nav-link">
-                  <i class="nav-icon fas fa-upload"></i>
+                  <a href="<?php echo base_url('design-type');?>" class="nav-link">
+                  <i class="nav-icon fa fa-align-justify"></i>
                   <p>
-                  Upload Images
+                  Manage Design Types
+                  </p>
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="<?php echo base_url('upload');?>" class="nav-link">
+                  <i class="nav-icon far fa-images"></i>
+
+                  <p>
+                   Upload Images
                   </p>
                   </a>
                   </li>
@@ -177,3 +198,4 @@
             </nav>
          </div>
       </aside>
+      

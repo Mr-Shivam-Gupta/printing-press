@@ -30,8 +30,8 @@
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/responsive.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
 
-        <link rel="icon" href="<?php echo base_url('web-include/');?>images/cropped-favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="<?php echo base_url('web-include/');?>images/cropped-favicon-192x192.png" sizes="192x192" />
+        <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="32x32" />
+        <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('web-include/');?>images/cropped-favicon-180x180.png" />
     </head>
 	<body class="home page custom-background body_tag scheme_default body_style_wide blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-18 header_position_default menu_style_top no_layout">
@@ -49,7 +49,7 @@
                                 <div class="sc_content_container">
                                     <div class="sc_layouts_item">
                                         <a href="<?php echo base_url('');?>" class="sc_layouts_logo sc_layouts_logo_default">
-                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>images/logo.png" alt="logo">
+                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>photos/logo.png" alt="logo">
                                         </a>
                                     </div>
                                 </div>
@@ -175,20 +175,26 @@
                                             </a>
                                         </li>
                                        
-                                        <li class="menu-item ">
+                                        <li class="menu-item menu-item-has-children">
                                             <a href="<?php echo base_url('designs');?>">
                                                 <span>Designs</span>
                                             </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <span>Style 1</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                             
                                         </li>
-                                        <!-- /Menu item : Blog -->
-                                        <!-- Menu item : Contacts -->
+                                    
                                         <li class="menu-item">
                                             <a href="<?php echo base_url('contact-us');?>">
                                                 <span>Contacts</span>
                                             </a>
                                         </li>
-                                        <!-- Menu item : Contacts -->
+                                        
                                     </ul>
                                 </nav>
                                 <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
@@ -197,8 +203,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- /Menu -->
-                            <!-- E-mail -->
                             <div class="sc_layouts_item contacts">
                                 <div class="sc_layouts_iconed_text">
                                     <a href="mailto:info@yoursite.com" class="sc_layouts_item_link sc_layouts_iconed_text_link">
@@ -219,9 +223,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <!-- /Contact phone -->
-                            <!-- Socials -->
-                            <div class="sc_layouts_item">
+                            <!-- <div class="sc_layouts_item">
                                 <div class="sc_socials sc_socials_default sc_align_default">
                                     <div class="socials_wrap">
                                         <span class="social_item">
@@ -243,13 +245,12 @@
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /Socials -->
+                            </div> -->
                         </div>
                     </div>
-                    <!-- /Top panel -->
+                   
                 </header>
-                <!-- /Header -->
+           
                 <!-- Menu mobile -->
                 <div class="menu_mobile_overlay"></div>
                 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
