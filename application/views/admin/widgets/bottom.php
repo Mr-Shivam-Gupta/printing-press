@@ -16,7 +16,8 @@ All rights reserved.
 
 <script src="<?php echo base_url('web-include/admin/');?>plugins/jquery-ui/jquery-ui.min.js"></script>
 
-<script>
+<script> 
+
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 
