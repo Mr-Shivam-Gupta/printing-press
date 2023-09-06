@@ -8,12 +8,43 @@ class Admin extends CI_Controller
     $this->load->helper('custom_helper');
     $this->load->model('Printing_model');
     date_default_timezone_set('Asia/Kolkata');
+    if (($this->session->login["user_type"] != "admin")) {
+      $this->session->set_flashdata("error", "No direct  access allowed");
+      return redirect("admin-login");
+  } 
   }
 
   public function index()
   {
     $data['page_name'] = 'dashboard';
     $this->load->view('admin/index', $data);
+  }
+  public function calulateStock(){
+    $this->form_validation->set_rules('plush','plush','trim');
+    $this->form_validation->set_rules('minus','minus','trim');
+     $id= $this->input->post('id');
+     $data = $this->db->where(['id'=>$id])->get('stock_tbl')->row();
+     $availData = $data->available;
+     $plush = $this->input->post('plush');
+     $minus = $this->input->post('minus');
+    
+     if ($plush !="") {
+      $addition = $availData + $plush;
+      $formData = [
+        'available'=>$addition
+      ];
+      $this->db->where(['id'=>$id])->update('stock_tbl',$formData);
+      echo '1';
+     }
+     if ($minus !="") {
+      $subtraction = $availData - $minus;
+      $formData = [
+        'available'=>$subtraction
+      ];
+      $this->db->where(['id'=>$id])->update('stock_tbl',$formData);
+      echo '1';
+     }
+
   }
   public function manageStock($id = Null)
   {

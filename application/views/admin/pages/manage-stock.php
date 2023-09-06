@@ -20,7 +20,7 @@
                   <td class="text-center"><?php echo $i++; ?></td>
                   <td class="text-center"><?php echo $data['product']; ?></td>
                   <td class="text-center"><?php echo $data['quantity']; ?></td>
-                  <td class="text-center"><?php echo $data['quantity']; ?></td>
+                  <td class="text-center"><?php echo $data['available']; ?></td>
                   <td class="text-center">
                      <a href="javascript:void(0);" type="button" data-toggle="modal" data-target="#purchase" data-title="<?php echo $data['product']; ?>"  data-id="<?php echo $data['id']; ?>"
                         class="btn  bg-gradient-success purchase-button"><i
@@ -43,47 +43,68 @@
     $('.purchase-button').click(function(){
         var id = $(this).data('id');
         var title = $(this).data('title');
-        $('#add').val(id);
+        $('#pur').val(id);
         $('#title').html(title);
     });
+    $('.used-button').click(function(){
+        var id = $(this).data('id');
+        var title = $(this).data('title');
+        $('#use').val(id);
+        $('#u-title').html(title);
+    });
+
 });
    </script>
    <div class="modal fade" id="purchase">
       <div class="modal-dialog">
          <div class="modal-content">
-            <div class="modal-header">
-               <h3>Product:&nbsp;</h3><h4 class="modal-title" id="title"> </h4>
+            <div class="modal-header bg-success">
+               <h5 class="modal-title">Product:&nbsp;</h5><h5 class="modal-title" id="title"> </h5>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <div class="modal-body">
-                <input type="text" id="add" value="">
-               
-            </div>
-            <div class="modal-footer justify-content-between">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <form action="<?php echo base_url('Admin/calulateStock');?>" method="post" enctype="multipart/form-data" id="admin-purchase">
+               <div class="modal-body">
+               <div class="form-group">
+                        <label >Purchase Quantity</label>
+                        <input type="text" class="form-control" name="plush" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Purchase Quantity">
+                        </div>
+                   <input type="hidden" id="pur" name="id" value="">
+                  
+               </div>
+               <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-success">Save changes</button>
+               </div>
+
+            </form>
          </div>
       </div>
    </div>
    <div class="modal fade" id="used">
       <div class="modal-dialog">
          <div class="modal-content">
-            <div class="modal-header">
-               <h4 class="modal-title">Default used</h4>
-               <button type="button"  class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-header bg-info">
+               <h5 class="modal-title">Product:&nbsp;</h5><h5 class="modal-title" id="u-title"> </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <div class="modal-body">
-               <p>One fine body&hellip;</p>
-            </div>
-            <div class="modal-footer justify-content-between">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <form action="<?php echo base_url('Admin/calulateStock');?>" method="post" enctype="multipart/form-data" id="admin-uses" >
+               <div class="modal-body">
+               <div class="form-group">
+                        <label >Used Quantity</label>
+                        <input type="text" class="form-control" name="minus" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Used Quantity">
+                        </div>
+                   <input type="hidden" id="use" name="id" value="">
+               </div>
+               <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-info">Save changes</button>
+               </div>
+
+            </form>
          </div>
       </div>
    </div>
@@ -91,10 +112,10 @@
 <script>
    $(document).ready(function () {
     
-   $("#DtypeSubmit").submit(function (e) {
+   $("#admin-purchase").submit(function (e) {
      e.preventDefault();
      $.ajax({
-         url: $(this).attr('action'),
+         url:$(this).attr('action'),
          type: 'post',
          processData: false,
          contentType: false,
@@ -112,13 +133,13 @@
          },
          success: function (data) {
              if (data == 1) {
-                 $('#DtypeSubmit')[0].reset();
+                 $('#admin-purchase')[0].reset();
                  Swal.fire({
                      title: "Successful",
                      text: "Your Request Sent Successfully",
                      icon: "success",
                  }).then(function () {
-                     window.location.href="<?php echo base_url('design-type'); ?>";
+                     window.location.href="<?php echo base_url('manage-stock'); ?>";
                       });
              } else {
                  Swal.fire({
@@ -137,10 +158,10 @@
          }
      });
    });
-   $("#DtypeEdit").submit(function (e) {
+   $("#admin-uses").submit(function (e) {
      e.preventDefault();
      $.ajax({
-         url: $(this).attr('action'),
+         url:$(this).attr('action'),
          type: 'post',
          processData: false,
          contentType: false,
@@ -158,13 +179,13 @@
          },
          success: function (data) {
              if (data == 1) {
-                 $('#DtypeEdit')[0].reset();
+                 $('#admin-uses')[0].reset();
                  Swal.fire({
                      title: "Successful",
                      text: "Your Request Sent Successfully",
                      icon: "success",
                  }).then(function () {
-                     window.location.href="<?php echo base_url('design-type'); ?>";
+                     window.location.href="<?php echo base_url('manage-stock'); ?>";
                       });
              } else {
                  Swal.fire({
@@ -183,6 +204,8 @@
          }
      });
    });
+
+  
    });
    
 </script>
