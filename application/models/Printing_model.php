@@ -3,9 +3,9 @@
 class Printing_model extends CI_Model
 {
 	
-	public function getUserAuthentication($tbl){
+	public function getUserAuthentication($tbl,$cond){
 
-		$result = $this->db->get('admin_tbl');
+		$result = $this->db->get('admin_tbl',$cond);
 		return $result;
 
  }
@@ -21,6 +21,18 @@ class Printing_model extends CI_Model
 			$result =$this->db->insert('design_tbl',$formData);
 			return $result;
 			}
+ }
+ public function  productSubmit($tbl,$formData=""){
+			if ($formData != ""){
+			$result =$this->db->insert('stock_tbl',$formData);
+			return $result;
+			}
+ }
+      public function  productEdit($tbl,$id, $formData=""){
+		if ($formData != ""){
+		$result =$this->db->where(['id'=>$id])->update('stock_tbl',$formData);
+		return $result;
+		}
  }
       public function  DtypeEdit($tbl,$id, $formData=""){
 		if ($formData != ""){

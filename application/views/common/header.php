@@ -29,6 +29,8 @@
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/general.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/responsive.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
         <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="32x32" />
         <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="192x192" />
@@ -40,16 +42,16 @@
             
             <div class="page_wrap">
               
-                <header class="top_panel top_panel_custom top_panel_custom_18 without_bg_image scheme_default">
+                <header class="top_panel top_panel_custom top_panel_custom_18 without_bg_image scheme_default" style="background-color: black;">
                   
-                    <div class="top_panel_container sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_delimiter sc_layouts_row_fixed">
+                    <div class="top_panel_container sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_delimiter sc_layouts_row_fixed" style="background-color: black;">
                         <div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left">
                            
                             <div class="sc_content sc_content_default sc_float_left sc_align_left">
                                 <div class="sc_content_container">
-                                    <div class="sc_layouts_item">
-                                        <a href="<?php echo base_url('');?>" class="sc_layouts_logo sc_layouts_logo_default">
-                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>logo.jpg" alt="logo">
+                                    <div class="">
+                                        <a href="<?php echo base_url('');?>" class="sc_layouts_logo_default">
+                                            <img class="logo_image" src="<?php echo base_url('web-include/');?>logo.jpg" alt="logo" style="width:125px;">
                                         </a>
                                     </div>
                                 </div>
@@ -65,108 +67,13 @@
                                             </a>
                                             
                                         </li>
+                            
                                         
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Features</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">
-                                                        <span>Tools</span>
-                                                    </a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Typography</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Shortcodes</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                               
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">
-                                                        <span>Pages</span>
-                                                    </a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Our Team</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Team Member</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item menu-item-has-children">
-                                                            <a href="#">
-                                                                <span>Gallery</span>
-                                                            </a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="#">
-                                                                        <span>Gallery Grid</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="#">
-                                                                        <span>Gallery Cobbles</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="#">
-                                                                        <span>Gallery Masonry</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">
-                                                        <span>Support</span>
-                                                    </a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Support</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Video Tutorials</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                              
-                                            </ul>
-                                        </li>
-                                        
-                                        <li class="menu-item menu-item-has-children">
+                                        <li class="menu-item ">
                                             <a href="#">
                                                 <span>About</span>
                                             </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Style 1</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Style 2</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                           
                                         </li>
                                        
                                         <li class="menu-item">
@@ -208,24 +115,36 @@
                             </div>
                             <div class="sc_layouts_item contacts">
                                 <div class="sc_layouts_iconed_text">
-                                    <a href="mailto:info@yoursite.com" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                    <a href="mailto:sujeetrhythemphpy@gmail.com" class="sc_layouts_item_link sc_layouts_iconed_text_link">
                                         <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-empty"></span>
                                         <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
-                                            <span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">info@yoursite.com</span>
+                                            <span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">sujeetrhythemphpy@gmail.com</span>
                                         </span>
                                     </a>
                                 </div>
                             </div>
-                            <!-- /E-mail -->
-                            <!-- Contact phone -->
+                            
                             <div class="sc_layouts_item contacts">
                                 <div class="sc_layouts_iconed_text">
-                                    <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-phone-2"></span>
-                                    <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
-                                        <span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">0 (800) 123-456</span>
-                                    </span>
+                                    <a href="tel:093408 08198">
+                                        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-phone-2"></span>
+                                        <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
+                                            <span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">093408 08198</span>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
+                            <div class="sc_layouts_item contacts">
+                                <div class="sc_layouts_iconed_text">
+                               <a href="<?php echo base_url('admin-login')?>" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                               <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-login"></span>
+                                    <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
+                                        <span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">Login</span>
+                                    </span>
+                               </a>
+                                </div>
+                            </div>
+                            
                             <!-- <div class="sc_layouts_item">
                                 <div class="sc_socials sc_socials_default sc_align_default">
                                     <div class="socials_wrap">
@@ -233,7 +152,8 @@
                                             <a href="#" target="_blank" class="social_icons social_twitter">
                                                 <span class="trx_addons_icon-twitter"></span>
                                             </a>
-                                        </span><span class="social_item">
+                                        </span>
+                                        <span class="social_item">
                                             <a href="#" target="_blank" class="social_icons social_facebook">
                                                 <span class="trx_addons_icon-facebook"></span>
                                             </a>
@@ -253,7 +173,6 @@
                     </div>
                    
                 </header>
-           
                 <!-- Menu mobile -->
                 <div class="menu_mobile_overlay"></div>
                 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">

@@ -21,7 +21,7 @@
     <div class="card">
         <div class="card-body login-card-body">
         <div class="login-logo mt-3">
-        <img class="logo-pic-one " style="width:80%;" src="<?php echo base_url('web-include/');?>images/logo.png" alt="logo">
+        <img class="logo-pic-one " style="width:80%;" src="<?php echo base_url('web-include/');?>logo.jpg" alt="logo">
         </div>
       <p class="login-box-msg">Sign in to start your session</p>
       <?php if($errorMsg=$this->session->flashdata('error')):?>

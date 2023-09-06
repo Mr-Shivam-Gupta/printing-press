@@ -58,7 +58,7 @@
    </div>
    <div class="card">
       <div class="card-header">
-         <h3 class="card-title">Design List</h3>
+         <h3 class="card-title">Manage Design List</h3>
       </div>
       <div class="card-body">
          <table id="example1" class="table table-bordered table-striped">
@@ -66,7 +66,7 @@
                <tr>
                   <th width="20" class="text-center">S.No</th>
                   <th width="150" class="text-center">Design Type</th>
-                  <th width="150"class="text-center">Image</th>
+                  <th width="150"class="text-center">URL</th>
                   <th width="80" class="text-center">Action</th>
                </tr>
             </thead>
@@ -74,8 +74,8 @@
                <?php $i = 1; foreach ($tbl_data as $data) { ?>
                <tr>
                   <td class="text-center"><?php echo $i++; ?></td>
-                  <td><?php echo $data['type']; ?></td>
-                  <td><?php echo $data['url']; ?></td>
+                  <td class="text-center"><?php echo $data['type']; ?></td>
+                  <td class="text-center"><?php echo $data['url']; ?></td>
                   <td class="text-center">
                      <a href="<?php echo base_url(); ?>Admin/EditDesignType/<?php echo $data['id']; ?>"><button type="button"
                         class="btn  bg-gradient-primary"><i

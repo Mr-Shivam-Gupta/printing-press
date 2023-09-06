@@ -262,7 +262,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #47d6e8;
 }
 .scheme_default .sc_layouts_row_delimiter, .scheme_default.sc_layouts_row_delimiter {
-    border-color: #ebeef1;
+    border-color: #3c3b3b;
 }
 .scheme_default .sc_layouts_item_icon {
     color: #7f818d;
@@ -314,19 +314,19 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #47d6e8;
 }
 .scheme_default .sc_layouts_row_type_compact .sc_layouts_item, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item {
-  color: #23242c;
+  color: #fff;
 }
 .scheme_default .sc_layouts_row_type_compact .sc_layouts_item a, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item a {
-    color: #23242c;
+    color: #fff;
 }
 .scheme_default .sc_layouts_row_type_compact .sc_layouts_item a:hover, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item a:hover, .scheme_default .sc_layouts_row_type_compact .sc_layouts_item a:hover .sc_layouts_item_icon, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item a:hover .sc_layouts_item_icon {
-    color: #0e0e12;
+    color: #ff9c07;
 }
 .scheme_default .sc_layouts_row_type_compact .sc_layouts_item_icon, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item_icon {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .sc_layouts_row_type_compact .sc_layouts_item_details_line1, .scheme_default .sc_layouts_row_type_compact .sc_layouts_item_details_line2, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item_details_line1, .scheme_default.sc_layouts_row_type_compact .sc_layouts_item_details_line2 {
-    color: #23242c;
+    color: #fff;
 }
 .scheme_default .sc_layouts_row_type_compact .search_wrap .search_submit, .scheme_default.sc_layouts_row_type_compact .search_wrap .search_submit {
     background-color: transparent;
@@ -363,7 +363,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #0e0e12;
 }
 .scheme_default .sc_layouts_menu_nav>li>a:hover, .scheme_default .sc_layouts_menu_nav>li.sfHover>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-item>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-parent>a, .scheme_default .sc_layouts_menu_nav>li.current-menu-ancestor>a {
-    color: #0e0e12 !important;
+    color: #fff !important;
 }
 .scheme_default .sc_layouts_menu_nav>li ul {
     background-color: #04caf7;
@@ -403,7 +403,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_default .socials_wrap .social_item a.social_facebook {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .socials_wrap .social_item a.social_gplus {
     background-color: #fcd63c;
@@ -559,7 +559,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #47d6e8;
 }
 .scheme_default .post_item_single .post_header .post_meta_item.post_categories a, .scheme_default .post_meta_item.post_categories, .scheme_default .post_meta_item.post_categories a {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .post_meta_item.post_categories a:hover {
     color: #0e0e12;
@@ -665,7 +665,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, #f4f6f9 50%, #47d6e8 50%) no-repeat scroll right bottom / 210% 100% #47d6e8 !important;
 }
 .scheme_default .post_item_single .post_content .post_meta .post_share .social_item a.social_facebook {
-    background: linear-gradient(to right, #f4f6f9 50%, #e947a5 50%) no-repeat scroll right bottom / 210% 100% #e947a5 !important;
+    background: linear-gradient(to right, #f4f6f9 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_default .post_item_single .post_content .post_meta .post_share .social_item a.social_gplus {
     background: linear-gradient(to right, #f4f6f9 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
@@ -791,7 +791,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #23242c;
 }
 .scheme_default .widget li:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .widget a {
     color: #04caf7;
@@ -818,7 +818,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #7f818d;
 }
 .scheme_default .widget_calendar tbody td a:after {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .widget_calendar td#today {
     color: #ffffff !important;
@@ -830,16 +830,16 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #13162b;
 }
 .scheme_default .widget_calendar td#today:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .widget_calendar td#today a:after {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .widget_calendar td#today a:hover:after {
     background-color: #13162b;
 }
 .scheme_default .widget_calendar #prev a, .scheme_default .widget_calendar #next a {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .widget_calendar #prev a:hover, .scheme_default .widget_calendar #next a:hover {
     color: #0e0e12;
@@ -967,10 +967,10 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #0e0e12;
 }
 .scheme_default .minimal-light .esg-grid .esg-filterbutton:hover {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .minimal-light .esg-grid .esg-filterbutton.selected:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 
 /* ================= BUTTON'S HOVERS ==================== */
@@ -1035,16 +1035,16 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to top, #0e0e12 50%, #04caf7 50%) no-repeat scroll right top / 100% 210% #04caf7 !important;
 }
 .scheme_default .sc_button_hover_style_alterbd.sc_button_hover_slide_left {
-    background: linear-gradient(to right, 	#e947a5 50%, #e1e2e8 50%) no-repeat scroll right bottom / 210% 100% #e1e2e8 !important;
+    background: linear-gradient(to right, 	#fcd63c 50%, #e1e2e8 50%) no-repeat scroll right bottom / 210% 100% #e1e2e8 !important;
 }
 .scheme_default .sc_button_hover_style_alterbd.sc_button_hover_slide_right {
-    background: linear-gradient(to left, 	#e947a5 50%, #e1e2e8 50%) no-repeat scroll left bottom / 210% 100% #e1e2e8 !important;
+    background: linear-gradient(to left, 	#fcd63c 50%, #e1e2e8 50%) no-repeat scroll left bottom / 210% 100% #e1e2e8 !important;
 }
 .scheme_default .sc_button_hover_style_alterbd.sc_button_hover_slide_top {
-    background: linear-gradient(to bottom, 	#e947a5 50%, #e1e2e8 50%) no-repeat scroll right bottom / 100% 210% #e1e2e8 !important;
+    background: linear-gradient(to bottom, 	#fcd63c 50%, #e1e2e8 50%) no-repeat scroll right bottom / 100% 210% #e1e2e8 !important;
 }
 .scheme_default .sc_button_hover_style_alterbd.sc_button_hover_slide_bottom {
-    background: linear-gradient(to top, #e947a5 50%, #e1e2e8 50%) no-repeat scroll right top / 100% 210% #e1e2e8 !important;
+    background: linear-gradient(to top, #fcd63c 50%, #e1e2e8 50%) no-repeat scroll right top / 100% 210% #e1e2e8 !important;
 }
 .scheme_default .sc_button_hover_slide_left:hover, .scheme_default .sc_button_hover_slide_left.active, .scheme_default .ui-state-active .sc_button_hover_slide_left, .scheme_default li.active .sc_button_hover_slide_left {
     background-position: left bottom !important;
@@ -1062,7 +1062,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, 	#0e0e12 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_default .sc_button_pink.sc_button_hover_slide_left {
-    background: linear-gradient(to right, 	#0e0e12 50%, #e947a5 50%) no-repeat scroll right bottom / 210% 100% #e947a5 !important;
+    background: linear-gradient(to right, 	#0e0e12 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_default .comments_wrap .form-submit input[type="submit"], .scheme_default .sc_button_dark.sc_button_hover_slide_left {
     background: linear-gradient(to right, 	#fcd63c 50%, #23242c 50%) no-repeat scroll right bottom / 210% 100% #23242c !important;
@@ -1072,7 +1072,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, 	#47d6e8 50%, #f4f6f9 50%) no-repeat scroll right bottom / 210% 100% #f4f6f9 !important;
 }
 .scheme_default .sc_button_white.sc_button_hover_slide_left {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: linear-gradient(to right, 	#47d6e8 50%, #ffffff 50%) no-repeat scroll right bottom / 210% 100% #ffffff !important;
 }
 .scheme_default .sc_button_yellow.sc_button_hover_slide_left:hover, .scheme_default .sc_button_pink.sc_button_hover_slide_left:hover, .scheme_default .sc_button_dark.sc_button_hover_slide_left:hover, .scheme_default .sc_button_light.sc_button_hover_slide_left:hover, .scheme_default .sc_button_white.sc_button_hover_slide_left:hover, .scheme_default .comments_wrap .form-submit input[type="submit"]:hover {
@@ -1082,7 +1082,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: #fcd63c !important;
 }
 .scheme_default .sc_button_pink {
-    background: #e947a5 !important;
+    background: #fcd63c !important;
 }
 .scheme_default .sc_button_dark {
     background: #23242c !important;
@@ -1092,7 +1092,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: #f4f6f9 !important;
 }
 .scheme_default .sc_button_white {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: #ffffff !important;
 }
 .scheme_default button:not(.search_submit):before, .scheme_default .sc_item_button a:not(.sc_button_simple):not(.sc_button_hover_slide_left):before, .scheme_default .sc_form button:before, .scheme_default .sc_price_link:before, .scheme_default .sc_action_item_link:before {
@@ -1302,7 +1302,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background-color: #47d6e8;
 }
 .scheme_default ul[class*="trx_addons_list"]>li:before {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default ul[class*="trx_addons_list"][class*="_circled"]>li:before {
     color: #ffffff;
@@ -1343,7 +1343,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #13162b;
 }
 .scheme_default .trx_addons_hover_mask {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%);
 }
 .scheme_default .trx_addons_hover_title {
     color: #ffffff;
@@ -1532,7 +1532,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background-color: #04caf7;
 }
 .scheme_default .sc_item_subtitle {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .sc_item_subtitle.sc_item_title_style_blue_sub {
     color: #47d6e8;
@@ -1656,7 +1656,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
 }
 .scheme_default .sc_blogger_plain .sc_blogger_item_date {
     color: #ffffff;
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .sc_countdown_default .sc_countdown_digits span {
     color: #ffffff;
@@ -1950,13 +1950,13 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #23242c;
 }
 .scheme_default .sc_services_hover .sc_services_item.with_image .sc_services_item_content:before {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%);
 }
 .scheme_default .sc_services_hover .sc_services_item.with_image .sc_services_item_content:after {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.8) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.8) 100%);
 }
 .scheme_default .sc_services_hover .sc_services_item_link a.sc_button_white.sc_button_hover_slide_left {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: linear-gradient(to right, 	#ffffff 50%, #ffffff 50%) no-repeat scroll right bottom / 210% 100% #ffffff !important;
 }
 .scheme_default .sc_services_chess .sc_services_item {
@@ -2047,7 +2047,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_default .footer_wrap .socials_wrap .social_item a.social_facebook, .scheme_default.footer_wrap .socials_wrap .social_item a.social_facebook {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_default .footer_wrap .socials_wrap .social_item a.social_gplus, .scheme_default.footer_wrap .socials_wrap .social_item a.social_gplus {
     background-color: #fcd63c;
@@ -2124,7 +2124,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
 }
 .scheme_default .sc_team .sc_team_item_link:hover:before {
     background-color: #ffffff;
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_default .trx_addons_scroll_to_top {
     border-color: #47d6e8;
@@ -2433,7 +2433,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .sc_layouts_row_type_compact .sc_layouts_item_icon, .scheme_dark.sc_layouts_row_type_compact .sc_layouts_item_icon {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .sc_layouts_row_type_compact .sc_layouts_item_details_line1, .scheme_dark .sc_layouts_row_type_compact .sc_layouts_item_details_line2, .scheme_dark.sc_layouts_row_type_compact .sc_layouts_item_details_line1, .scheme_dark.sc_layouts_row_type_compact .sc_layouts_item_details_line2 {
     color: #ffffff;
@@ -2515,7 +2515,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .socials_wrap .social_item a.social_facebook {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .socials_wrap .social_item a.social_gplus {
     background-color: #fcd63c;
@@ -2671,7 +2671,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #47d6e8;
 }
 .scheme_dark .post_item_single .post_header .post_meta_item.post_categories a, .scheme_dark .post_meta_item.post_categories, .scheme_dark .post_meta_item.post_categories a {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .post_meta_item.post_categories a:hover {
     color: #ffffff;
@@ -2777,7 +2777,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, #352d89 50%, #47d6e8 50%) no-repeat scroll right bottom / 210% 100% #47d6e8 !important;
 }
 .scheme_dark .post_item_single .post_content .post_meta .post_share .social_item a.social_facebook {
-    background: linear-gradient(to right, #352d89 50%, #e947a5 50%) no-repeat scroll right bottom / 210% 100% #e947a5 !important;
+    background: linear-gradient(to right, #352d89 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_dark .post_item_single .post_content .post_meta .post_share .social_item a.social_gplus {
     background: linear-gradient(to right, #352d89 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
@@ -2903,7 +2903,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .widget li:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .widget a {
     color: #faef81;
@@ -2930,7 +2930,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .widget_calendar tbody td a:after {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .widget_calendar td#today {
     color: #ffffff !important;
@@ -2942,16 +2942,16 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #13162b;
 }
 .scheme_dark .widget_calendar td#today:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .widget_calendar td#today a:after {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .widget_calendar td#today a:hover:after {
     background-color: #13162b;
 }
 .scheme_dark .widget_calendar #prev a, .scheme_dark .widget_calendar #next a {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .widget_calendar #prev a:hover, .scheme_dark .widget_calendar #next a:hover {
     color: #ffffff;
@@ -2986,7 +2986,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark.footer_wrap {
-    background-color: #352d89;
+    background-color: black;
     color: #ffffff;
 }
 .scheme_dark.footer_wrap h1, .scheme_dark.footer_wrap h2, .scheme_dark.footer_wrap h3, .scheme_dark.footer_wrap h4, .scheme_dark.footer_wrap h5, .scheme_dark.footer_wrap h6, .scheme_dark.footer_wrap h1 a, .scheme_dark.footer_wrap h2 a, .scheme_dark.footer_wrap h3 a, .scheme_dark.footer_wrap h4 a, .scheme_dark.footer_wrap h5 a, .scheme_dark.footer_wrap h6 a {
@@ -3079,10 +3079,10 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .minimal-light .esg-grid .esg-filterbutton:hover {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .minimal-light .esg-grid .esg-filterbutton.selected:before {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 
 /* ================= BUTTON'S HOVERS ==================== */
@@ -3147,16 +3147,16 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to top, #ffffff 50%, #faef81 50%) no-repeat scroll right top / 100% 210% #faef81 !important;
 }
 .scheme_dark .sc_button_hover_style_alterbd.sc_button_hover_slide_left {
-    background: linear-gradient(to right, 	#e947a5 50%, #271f71 50%) no-repeat scroll right bottom / 210% 100% #271f71 !important;
+    background: linear-gradient(to right, 	#fcd63c 50%, #271f71 50%) no-repeat scroll right bottom / 210% 100% #271f71 !important;
 }
 .scheme_dark .sc_button_hover_style_alterbd.sc_button_hover_slide_right {
-    background: linear-gradient(to left, 	#e947a5 50%, #271f71 50%) no-repeat scroll left bottom / 210% 100% #271f71 !important;
+    background: linear-gradient(to left, 	#fcd63c 50%, #271f71 50%) no-repeat scroll left bottom / 210% 100% #271f71 !important;
 }
 .scheme_dark .sc_button_hover_style_alterbd.sc_button_hover_slide_top {
-    background: linear-gradient(to bottom, 	#e947a5 50%, #271f71 50%) no-repeat scroll right bottom / 100% 210% #271f71 !important;
+    background: linear-gradient(to bottom, 	#fcd63c 50%, #271f71 50%) no-repeat scroll right bottom / 100% 210% #271f71 !important;
 }
 .scheme_dark .sc_button_hover_style_alterbd.sc_button_hover_slide_bottom {
-    background: linear-gradient(to top, #e947a5 50%, #271f71 50%) no-repeat scroll right top / 100% 210% #271f71 !important;
+    background: linear-gradient(to top, #fcd63c 50%, #271f71 50%) no-repeat scroll right top / 100% 210% #271f71 !important;
 }
 .scheme_dark .sc_button_hover_slide_left:hover, .scheme_dark .sc_button_hover_slide_left.active, .scheme_dark .ui-state-active .sc_button_hover_slide_left, .scheme_dark li.active .sc_button_hover_slide_left {
     background-position: left bottom !important;
@@ -3174,7 +3174,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, 	#ffffff 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_dark .sc_button_pink.sc_button_hover_slide_left {
-    background: linear-gradient(to right, 	#ffffff 50%, #e947a5 50%) no-repeat scroll right bottom / 210% 100% #e947a5 !important;
+    background: linear-gradient(to right, 	#ffffff 50%, #fcd63c 50%) no-repeat scroll right bottom / 210% 100% #fcd63c !important;
 }
 .scheme_dark .comments_wrap .form-submit input[type="submit"], .scheme_dark .sc_button_dark.sc_button_hover_slide_left {
     background: linear-gradient(to right, 	#fcd63c 50%, #ffffff 50%) no-repeat scroll right bottom / 210% 100% #ffffff !important;
@@ -3184,7 +3184,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: linear-gradient(to right, 	#47d6e8 50%, #352d89 50%) no-repeat scroll right bottom / 210% 100% #352d89 !important;
 }
 .scheme_dark .sc_button_white.sc_button_hover_slide_left {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: linear-gradient(to right, 	#47d6e8 50%, #ffffff 50%) no-repeat scroll right bottom / 210% 100% #ffffff !important;
 }
 .scheme_dark .sc_button_yellow.sc_button_hover_slide_left:hover, .scheme_dark .sc_button_pink.sc_button_hover_slide_left:hover, .scheme_dark .sc_button_dark.sc_button_hover_slide_left:hover, .scheme_dark .sc_button_light.sc_button_hover_slide_left:hover, .scheme_dark .sc_button_white.sc_button_hover_slide_left:hover, .scheme_dark .comments_wrap .form-submit input[type="submit"]:hover {
@@ -3194,7 +3194,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: #fcd63c !important;
 }
 .scheme_dark .sc_button_pink {
-    background: #e947a5 !important;
+    background: #fcd63c !important;
 }
 .scheme_dark .sc_button_dark {
     background: #ffffff !important;
@@ -3204,7 +3204,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background: #352d89 !important;
 }
 .scheme_dark .sc_button_white {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: #ffffff !important;
 }
 .scheme_dark button:not(.search_submit):before, .scheme_dark .sc_item_button a:not(.sc_button_simple):not(.sc_button_hover_slide_left):before, .scheme_dark .sc_form button:before, .scheme_dark .sc_price_link:before, .scheme_dark .sc_action_item_link:before {
@@ -3414,7 +3414,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background-color: #47d6e8;
 }
 .scheme_dark ul[class*="trx_addons_list"]>li:before {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark ul[class*="trx_addons_list"][class*="_circled"]>li:before {
     color: #271f71;
@@ -3455,7 +3455,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #13162b;
 }
 .scheme_dark .trx_addons_hover_mask {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%);
 }
 .scheme_dark .trx_addons_hover_title {
     color: #ffffff;
@@ -3644,7 +3644,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     background-color: #faef81;
 }
 .scheme_dark .sc_item_subtitle {
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .sc_item_subtitle.sc_item_title_style_blue_sub {
     color: #47d6e8;
@@ -3762,7 +3762,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
 }
 .scheme_dark .sc_blogger_plain .sc_blogger_item_date {
     color: #ffffff;
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .sc_countdown_default .sc_countdown_digits span {
     color: #ffffff;
@@ -4056,13 +4056,13 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .sc_services_hover .sc_services_item.with_image .sc_services_item_content:before {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%);
 }
 .scheme_dark .sc_services_hover .sc_services_item.with_image .sc_services_item_content:after {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.8) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.8) 100%);
 }
 .scheme_dark .sc_services_hover .sc_services_item_link a.sc_button_white.sc_button_hover_slide_left {
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     background: linear-gradient(to right, 	#ffffff 50%, #ffffff 50%) no-repeat scroll right bottom / 210% 100% #ffffff !important;
 }
 .scheme_dark .sc_services_chess .sc_services_item {
@@ -4153,7 +4153,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
     color: #ffffff;
 }
 .scheme_dark .footer_wrap .socials_wrap .social_item a.social_facebook, .scheme_dark.footer_wrap .socials_wrap .social_item a.social_facebook {
-    background-color: #e947a5;
+    background-color: #fcd63c;
 }
 .scheme_dark .footer_wrap .socials_wrap .social_item a.social_gplus, .scheme_dark.footer_wrap .socials_wrap .social_item a.social_gplus {
     background-color: #fcd63c;
@@ -4230,7 +4230,7 @@ em, i, .post-date, .rss-date .post_date, .post_meta_item, .post_counters_item, .
 }
 .scheme_dark .sc_team .sc_team_item_link:hover:before {
     background-color: #ffffff;
-    color: #e947a5;
+    color: #fcd63c;
 }
 .scheme_dark .trx_addons_scroll_to_top{
     border-color: #47d6e8;

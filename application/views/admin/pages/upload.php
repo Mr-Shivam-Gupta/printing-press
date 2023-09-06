@@ -15,14 +15,13 @@
                               <label>Select Design Type</label>
                               <select class="form-control" name="Dtype">
                                  <option selected ><?php echo $imgList->Dtype ?></option>
-                                 <option>option 1</option>
-                                 <option>option 2</option>
-                                 <option>option 3</option>
-                                 <option>option 4</option>
-                                 <option>option 5</option>
+                                 <?php  foreach ($des_data as $data) {  if ($imgList->Dtype == $data['type']) {
+                                    continue; } ?>
+                                    <option><?php echo $data['type'];?></option>
+                                   <?php } ?>
                               </select>
                            </div>
-                        </div>
+                        </div>   
                         <div class="col-6">
                            <div class="form-group">
                               <label>Select Designed Image</label>
@@ -48,11 +47,14 @@
                               <label>Select Design Type</label>
                               <select class="form-control" name="Dtype">
                                  <option selected disabled>Select Type</option>
-                                 <option>option 1</option>
-                                 <option>option 2</option>
+                                 <?php  foreach ($des_data as $data) { ?>
+                                   
+                                    <option><?php echo $data['type'];?></option>
+                                    <?php }?>
+                                 <!-- <option>option 2</option>
                                  <option>option 3</option>
                                  <option>option 4</option>
-                                 <option>option 5</option>
+                                 <option>option 5</option> -->
                               </select>
                            </div>
                         </div>
@@ -78,7 +80,7 @@
    </div>
    <div class="card">
       <div class="card-header">
-         <h3 class="card-title">Design List</h3>
+         <h3 class="card-title">Image  List</h3>
       </div>
       <div class="card-body">
          <table id="example1" class="table table-bordered table-striped">
@@ -94,8 +96,8 @@
                <?php $i = 1; foreach ($tbl_data as $data) { ?>
                <tr>
                   <td class="text-center"><?php echo $i++; ?></td>
-                  <td><?php echo $data['Dtype']; ?></td>
-                  <td><img src="<?php echo base_url('web-include/design/'); ?><?php echo $data['image']; ?>"
+                  <td class="text-center"><?php echo $data['Dtype']; ?></td>
+                  <td class="text-center"><img src="<?php echo base_url('web-include/design/'); ?><?php echo $data['image']; ?>"
                      alt="<?php echo $data['Dtype']; ?>" style="max-width:100px;max-height:100px;"></td>
                   <td class="text-center">
                      <a href="<?php echo base_url(); ?>Admin/editUpload/<?php echo $data['id']; ?>"><button type="button"

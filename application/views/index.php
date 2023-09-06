@@ -92,11 +92,11 @@
                                                 <div class="empty_space height_3em"></div>
                                                 <div class="sc_title sc_title_default">
                                                     <h6 class="sc_item_subtitle sc_title_subtitle sc_align_default sc_item_title_style_default">welcome to our</h6>
-                                                    <h2 class="sc_item_title sc_title_title sc_align_default sc_item_title_style_default">Full-service copy<br />
+                                                    <h2 class="sc_item_title sc_title_title sc_align_default sc_item_title_style_default">Sohag Studio<br />
                                                         & printing center</h2>
                                                 </div>
                                                 <div class="empty_space height_2em"></div>
-                                                <p>CopyPress has provided quality printing services to the NYC area and beyond since 1896! We specialize in commercial offset printing and digital printing services to cover all your needs. From brochures to banners, we are your one-stop print shop.</p>
+                                                <p style="text-align:justify;">Sohag Studio & Printing Center is a versatile business that seamlessly combines photography studio services with comprehensive printing solutions. With a professional photography studio equipped for various photography needs, including portraits and event photography, and a state-of-the-art printing center offering custom design, printing, and finishing services, they cater to a wide range of customer needs. Whether you require high-quality prints, personalized merchandise, graphic design assistance, or document reproduction, Sohag Studio & Printing Center is your one-stop destination for all things visual and print-related, making it a valuable resource for both individuals and businesses seeking creative and printing solutions.</p>
                                                 <div class="empty_space height_2_9em"></div>
                                                 <div class="sc_item_button sc_button_wrap">
                                                     <a href="#" class="sc_button sc_button_pink sc_button_size_normal sc_button_icon_left">
@@ -343,173 +343,46 @@
                                         </div>
                                         
                                         <!-- THE ESSENTIAL GRID 2.1.0.2 -->
-                                        <article class="myportfolio-container minimal-light" id="esg-grid-1-1-wrap">
-                                            <div id="esg-grid-1-1" class="esg-grid">
-                                                
-                                                <ul>
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-3d-technology filter-business-cards filter-posters eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery1.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Custom View Magazine Design</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-copy-everything filter-booklets filter-magazines eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery2.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Business Logo Design</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-photography filter-business-cards filter-posters eg-washington-copypress-wrapper5">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery3.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Press-Glued Catalog Printing</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-story-in-colors filter-booklets filter-magazines eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery4.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Book Covers Publishing</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-travellers filter-business-cards filter-posters eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery5.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Poster Templates and Presentations</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-3d-technology filter-booklets filter-magazines eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery6.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Commercial Billboard Prints</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-copy-everything filter-business-cards filter-posters eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery7.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Business Cards Design and Printing</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                    <!-- Grid Item -->
-                                                    <li class="filterall filter-photography filter-booklets filter-magazines eg-washington-copypress-wrapper">
-                                                        <div class="esg-media-cover-wrapper">
-                                                            <div class="esg-entry-media">
-                                                                <img src="<?php echo base_url('web-include/');?>images/gallery8.jpg" alt="">
-                                                            </div>
-                                                            <div class="esg-entry-cover esg-fade" data-delay="0">
-                                                                <div class="esg-overlay esg-slideright eg-washington-copypress-container" data-delay="0"></div>
-                                                                <div class="esg-absolute eg-washington-copypress-element-1-a esg-fade" data-delay="0.4">
-                                                                    <a class="eg-washington-copypress-element-1" href="post-single.html" target="_self">
-                                                                        <i class="eg-icon-right-open-1"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="esg-center eg-washington-copypress-element-8 esg-none esg-clear"></div>
-                                                                <div class="esg-center eg-washington-copypress-element-9 esg-none esg-clear"></div>
-                                                                <div class="esg-bottom eg-washington-copypress-element-3 esg-slideright" data-delay="0.3">Creative Writing Publishing</div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <!-- /Grid Item -->
-                                                </ul>
-                                            </div>
-                                        </article>
+                                        <!-- Gallery -->
+                                <div class="row">
+                                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-1.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Boat on Calm Water"
+                                        />
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-2.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Wintry Mountain Landscape"
+                                        />
+                                </div>
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-3.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Mountains in the Clouds"
+                                        />
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-4.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Boat on Calm Water"
+                                        />
+                                </div>
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-5.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Waves at Sea"
+                                        />
+                                    <img
+                                        src="<?php echo base_url('web-include/');?>photos/post-6.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Yosemite National Park"
+                                        />
+                                </div>
+                            </div>
+                            <!-- Gallery -->
                                         <div class="clear"></div>
                                         <div class="empty_space height_4em"></div>
                                         <div class="sc_item_button sc_button_wrap sc_align_center">
@@ -630,7 +503,7 @@
                                         <div class="empty_space height_6em"></div>
                                     </div>
                                 </div>
-                                <div class="copypress-custom-bg-1">
+                                <!-- <div class="copypress-custom-bg-1">
                                     <div class="content_wrap sc_layouts_column_icons_position_left">
                                         <div class="trx_addons_columns_wrap">
                                             <div class="trx_addons_column-1_2 trx_addons_column_specific sc_layouts_column_icons_position_left">
@@ -715,7 +588,7 @@
                                         </div>
                                         <div class="empty_space height_9_2em"></div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </article>
                     </div>

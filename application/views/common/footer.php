@@ -21,17 +21,15 @@
                                             <li class="menu-item menu-item-home">
                                                 <a href="index.html">Home</a>
                                             </li>
+                                          
                                             <li class="menu-item">
-                                                <a href="team.html">Features</a>
+                                                <a href="about-style-1.html">About</a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="services.html">Services</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="about-style-1.html">About</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-classic-2-columns.html">Blog</a>
+                                                <a href="blog-classic-2-columns.html">Designs</a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="contacts.html">Contacts</a>
@@ -68,7 +66,7 @@
                             <!-- /Socials -->
                             <!-- Copyright -->
                             <div>
-                                <p>© 2017 ThemeREX</p>
+                                <p>© 2023 Sohag</p>
                             </div>
                             <!-- /Copyright -->
                         </div>

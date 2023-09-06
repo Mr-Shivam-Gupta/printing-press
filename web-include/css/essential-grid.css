@@ -126,7 +126,7 @@
 }
 .esg-grid .eg-washington-copypress-container {
     background-color: transparent;
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%)
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%)
 }
 .eg-washington-copypress-element-1 {
     font-size: 20px;
@@ -164,7 +164,7 @@
 .eg-washington-copypress-element-1:hover {
     font-size: 20px;
     line-height: 22px;
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     font-weight: 400;
     border-radius: 60px;
     background-color: rgba(255, 255, 255, 1.00) !important;
@@ -248,7 +248,7 @@
 .eg-hayes-copypress-element-0:hover {
     font-size: 18px;
     line-height: 25px;
-    color: #e947a5 !important;
+    color: #fcd63c !important;
     font-weight: 600;
     border-radius: 0;
     background-color: rgba(255, 255, 255, 1.00) !important;
@@ -357,7 +357,7 @@
 }
 .esg-grid .eg-washington-copypress-container {
     background-color: transparent;
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #fcd63c 0%, rgba(233, 71, 165, 0.1) 100%);
 }
 .esg-grid .eg-washington-copypress-element-1-a {
     z-index: 5;

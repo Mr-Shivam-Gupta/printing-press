@@ -15,6 +15,79 @@ class Admin extends CI_Controller
     $data['page_name'] = 'dashboard';
     $this->load->view('admin/index', $data);
   }
+  public function manageStock($id = Null)
+  {
+    $data['edit'] = "";
+    $data['tbl_data']=$this->db->get('stock_tbl')->result_array();
+    $data['page_name'] = 'manage-stock';
+    $this->load->view('admin/index', $data);
+  }
+  public function addStock($id = Null)
+  {
+    $data['edit'] = "";
+    $data['tbl_data']=$this->db->get('stock_tbl')->result_array();
+    $data['page_name'] = 'add-stock';
+    $this->load->view('admin/index', $data);
+  }
+  public function productSubmit(){
+
+    if ($this->input->post()){ 
+      $this->form_validation->set_rules('product','product','trim|required');
+      $this->form_validation->set_rules('quantity','quantity','trim|required');
+      if ($this->form_validation->run() == false) {
+        echo" validation error";
+      }else{
+        $product = $this->input->post('product');
+        $checkProduct = $this->db->where(['product'=> $product])->get('stock_tbl')->num_rows();
+        if ($checkProduct > 0) {
+          echo "This Product already exist!";
+        }
+        $formData = [
+          'product  ' => $product,
+          'quantity' => $this->input->post('quantity')
+        ];
+        $dbSubmit = $this->Printing_model->productSubmit('stock_tbl', $formData);
+        if ($dbSubmit == true) {
+          echo "1";
+        }
+      }
+     }else {
+      echo "Please fill all fields ";
+     }
+  }
+  public function  Editproduct($id = Null)
+  {
+    $data['edit'] = "edit";
+    $data['page_name'] = 'add-stock';
+    $data['tbl_data']=$this->db->get('stock_tbl')->result_array();
+    $data['desList'] = $this->db->where(['id'=>$id])->get('stock_tbl')->row();
+    $this->load->view('admin/index', $data);
+  }
+  public function productEdit($id){
+    if ($this->input->post()){ 
+      $this->form_validation->set_rules('product','product','trim|required');
+      $this->form_validation->set_rules('quantity','quantity','trim|required');
+      if ($this->form_validation->run() == false) {
+        echo" validation error";
+      }else{
+        $product = $this->input->post('product');
+        $checkProduct = $this->db->where(['product'=> $product])->where_not_in('id', $id)->get('stock_tbl')->num_rows();
+        if ($checkProduct > 0) {
+          echo "This Product already exist!";
+        }
+        $formData = [
+          'product  ' => $product,
+          'quantity' => $this->input->post('quantity')
+        ];
+        $dbSubmit = $this->Printing_model->productEdit('stock_tbl',$id,$formData);
+        if ($dbSubmit == true) {
+          echo "1";
+        }
+      }
+     }else {
+      echo "Please fill all fields ";
+     }
+  }
 
   public function  DesignType($id = Null)
   {
@@ -43,7 +116,7 @@ class Admin extends CI_Controller
         $type = $this->input->post('Dtype');
         $url = $this->input->post('url');
 
-        $checkType =$this->db->where(['type'=> $type])->get('design_tbl')->num_rows();
+        $checkType = $this->db->where(['type'=> $type])->get('design_tbl')->num_rows();
         $checkUrl =$this->db->where(['type'=> $url])->get('design_tbl')->num_rows();
         if ($checkType > 0) {
           echo "This design type already exist!";
@@ -115,11 +188,13 @@ public function DeleteDesignType($id){
   {
       $data['edit'] = "";
       $data['page_name'] = 'upload';
+      $data['des_data']=$this->db->get('design_tbl')->result_array();
       $data['tbl_data']=$this->db->get('image_tbl')->result_array();
       $this->load->view('admin/index', $data);
   }
   public function editUpload($id = Null){
     $data['page_name'] = 'upload';
+    $data['des_data']=$this->db->get('design_tbl')->result_array();
     $data['tbl_data']=$this->db->get('image_tbl')->result_array();
     $data['imgList'] = $this->db->where(['id'=>$id])->get('image_tbl')->row();
     $data['edit'] = "edit";
@@ -132,10 +207,10 @@ public function DeleteDesignType($id){
     if ($this->input->post()) {
       if (!empty($_FILES['image']['name'])) {
         $config['upload_path'] = './web-include/design/';
-        $config['allowed_types'] = 'png|jpg|gif|jpeg';
-        $config['max_size']             = 300;
-        $config['max_width']            = 1024;
-        $config['max_height']           = 1024;
+        $config['allowed_types'] = 'webp|png|jpg|gif|jpeg';
+        // $config['max_size']             = 300;
+        // $config['max_width']            = 1024;
+        // $config['max_height']           = 1024;
         $config['encrypt_name'] = true;
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
@@ -167,10 +242,10 @@ public function DeleteDesignType($id){
     if ($this->input->post()) {
       if (!empty($_FILES['image']['name'])) {
         $config['upload_path'] = './web-include/design/';
-        $config['allowed_types'] = 'png|jpg|gif|jpeg';
-        $config['max_size']             = 300;
-        $config['max_width']            = 1024;
-        $config['max_height']           = 1024;
+        $config['allowed_types'] = 'webp|png|jpg|gif|jpeg';
+        // $config['max_size']             = 300;
+        // $config['max_width']            = 2024;
+        // $config['max_height']           = 2024;
         $config['encrypt_name'] = true;
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
@@ -205,5 +280,9 @@ public function DeleteDesignType($id){
   public function deleteUpload($id){
     $this->db->where(['id'=>$id])->delete('image_tbl');
     redirect('upload');
+  }
+  public function Deleteproduct($id){
+    $this->db->where(['id'=>$id])->delete('stock_tbl');
+    redirect('add-stock');
   }
 }
