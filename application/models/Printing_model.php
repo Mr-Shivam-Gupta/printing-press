@@ -16,6 +16,12 @@ class Printing_model extends CI_Model
 			return $result;
 			}
  }
+ public function  workSubmit($tbl,$formData=""){
+			if ($formData != ""){
+			$result =$this->db->insert('work_tbl',$formData);
+			return $result;
+			}	
+ }
  public function  DtypeSubmit($tbl,$formData=""){
 			if ($formData != ""){
 			$result =$this->db->insert('design_tbl',$formData);

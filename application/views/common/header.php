@@ -32,8 +32,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-        <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="32x32" />
-        <link rel="icon" href="<?php echo base_url('web-include/');?>photos/logo.png" sizes="192x192" />
+        <link rel="icon" href="<?php echo base_url('web-include/');?>logo.jpg" sizes="32x32" />
+        <link rel="icon" href="<?php echo base_url('web-include/');?>logo.jpg" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('web-include/');?>images/cropped-favicon-180x180.png" />
     </head>
 	<body class="home page custom-background body_tag scheme_default body_style_wide blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-18 header_position_default menu_style_top no_layout">
@@ -87,14 +87,14 @@
                                                 <span>Designs</span>
                                             </a>
                                             <ul class="sub-menu">
-                                                <!-- <li class="menu-item">
+                                                <li class="menu-item">
                                                     <?php foreach ($manu as $manu) { ?>
                                                        
                                                         <a href="<?php echo base_url('design/');echo $manu['url'];?> ">
                                                             <span><?php echo $manu['type'];?></span>
                                                         </a>
                                                         <?php }?>
-                                                </li> -->
+                                                </li>
                                             </ul>
                                             
                                         </li>

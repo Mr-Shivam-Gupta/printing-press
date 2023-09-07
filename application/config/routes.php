@@ -55,13 +55,14 @@ $route['user-authentication'] = 'welcome/userAuthentication';
 $route['contact-us'] = 'welcome/contact';
 $route['designs'] = 'welcome/designs';
 
+$route['design/(:any)'] = 'welcome/DesignsDetails';
 
 $route['admin-dashboard'] = 'admin';
 $route['upload'] = 'admin/upload';
 $route['design-type'] = 'admin/DesignType';
-$route['manage-stock'] = 'admin/manageStock';
-$route['add-stock'] = 'admin/addStock';
-$route['design/(:any)'] = 'admin/DesignsDetails/$1';
+$route['manage-product'] = 'admin/manageStock';
+$route['add-product'] = 'admin/addStock';
+$route['work-list'] = 'admin/workLIst';
 
 
 $route['404_override'] = '';

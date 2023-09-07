@@ -1,5 +1,5 @@
  <!-- Footer -->
- <footer class="footer_wrap footer_custom scheme_dark">
+ <footer class="footer_wrap footer_custom scheme_dark" >
                     <div class="sc_content sc_content_default sc_content_width_1_1">
                         <div class="sc_content_container">
                             <!-- Button -->

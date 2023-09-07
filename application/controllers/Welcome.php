@@ -22,9 +22,13 @@ class Welcome extends CI_Controller
 		$this->load->view('designs', $data);
 	}
 	
-	public function DesignsDetails($segment)
+	public function DesignsDetails()
 	{
-		$data['urlDetails'] = $this->db->get_where('design_tbl', array('url' => $segment))->result_array();
+		$data['manu'] = $this->db->get('design_tbl')->result_array();
+		$segment= $this->uri->segment(2);
+		$data['urlDetails'] = $this->db->get_where('design_tbl', array('url' => $segment))->row();
+		$type = $data['urlDetails']->type;
+		$data['images'] = $this->db->where(['Dtype'=>$type])->get('image_tbl')->result_array();
 		$this->load->view('designs-details', $data);
 	}
 	public function contact()

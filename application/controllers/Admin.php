@@ -19,6 +19,35 @@ class Admin extends CI_Controller
     $data['page_name'] = 'dashboard';
     $this->load->view('admin/index', $data);
   }
+  public function workLIst()
+  {
+
+    $data['page_name'] = 'work-list';
+    $data['works'] = $this->db->get_where('work_tbl',['status'=>'0'])->result_array();
+    $this->load->view('admin/index', $data);
+  }
+  public function workSubmit() {
+   if ($this->input->post()) {
+    $this->form_validation->set_rules('date','date','trim|required');
+    $this->form_validation->set_rules('work','work','trim|required');
+    $this->form_validation->set_rules('details','details','trim|required');
+    if ($this->form_validation->run() == false ) {
+      echo 'Validation error';
+    }else{
+      $formData = [
+        'date'=>$this->input->post('date'),
+        'work'=>$this->input->post('work'),
+        'details'=>$this->input->post('details')
+      ];
+      $submit =$this->Printing_models->workSubmit('work_tbl',$formData);
+      if ($submit == true) {
+        echo '1';
+      }
+    }
+   }else {
+    echo "Please fill all fields!";
+   }
+  }
   public function calulateStock(){
     $this->form_validation->set_rules('plush','plush','trim');
     $this->form_validation->set_rules('minus','minus','trim');
@@ -38,11 +67,17 @@ class Admin extends CI_Controller
      }
      if ($minus !="") {
       $subtraction = $availData - $minus;
-      $formData = [
-        'available'=>$subtraction
-      ];
-      $this->db->where(['id'=>$id])->update('stock_tbl',$formData);
-      echo '1';
+      if ($subtraction < 0) {
+        echo 'Product available quantity must be greater than or equal to zero.';
+      }
+      else {
+        $formData = [
+          'available'=>$subtraction
+        ];
+        $this->db->where(['id'=>$id])->update('stock_tbl',$formData);
+        echo '1';
+      }
+     
      }
 
   }
@@ -50,14 +85,14 @@ class Admin extends CI_Controller
   {
     $data['edit'] = "";
     $data['tbl_data']=$this->db->get('stock_tbl')->result_array();
-    $data['page_name'] = 'manage-stock';
+    $data['page_name'] = 'manage-product';
     $this->load->view('admin/index', $data);
   }
   public function addStock($id = Null)
   {
     $data['edit'] = "";
     $data['tbl_data']=$this->db->get('stock_tbl')->result_array();
-    $data['page_name'] = 'add-stock';
+    $data['page_name'] = 'add-product';
     $this->load->view('admin/index', $data);
   }
   public function productSubmit(){
@@ -315,5 +350,15 @@ public function DeleteDesignType($id){
   public function Deleteproduct($id){
     $this->db->where(['id'=>$id])->delete('stock_tbl');
     redirect('add-stock');
+  }
+  public function workDone($id){
+    $data = ['status'=>'1'];
+    $this->db->where(['id'=>$id])->update('work_tbl',$data);
+    redirect('work-list');
+  }
+  public function workCancel($id){
+    $data = ['status'=>'2'];
+    $this->db->where(['id'=>$id])->update('work_tbl',$data);
+    redirect('work-list');
   }
 }

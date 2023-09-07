@@ -70,18 +70,26 @@
                      </a>
                   </li>
                   <li class="nav-item">
-                  <a href="<?php echo base_url('add-stock');?>" class="nav-link">
-                  <i class="nav-icon fa fa-plus"></i>
+                  <a href="<?php echo base_url('work-list');?>" class="nav-link">
+                  <i class="nav-icon fas fa-paste"></i>
                   <p>
-                  Add Stock
+                  Work LIst
                   </p>
                   </a>
                   </li>
                   <li class="nav-item">
-                  <a href="<?php echo base_url('manage-stock');?>" class="nav-link">
+                  <a href="<?php echo base_url('add-product');?>" class="nav-link">
+                  <i class="nav-icon fa fa-plus"></i>
+                  <p>
+                  Add Product
+                  </p>
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="<?php echo base_url('manage-product');?>" class="nav-link">
                   <i class="nav-icon fa fa-book"></i>
                   <p>
-                  Manage Stock
+                  Manage Product
                   </p>
                   </a>
                   </li>
@@ -89,7 +97,7 @@
                   <a href="<?php echo base_url('design-type');?>" class="nav-link">
                   <i class="nav-icon 	fa fa-folder-open"></i>
                   <p>
-                  Manage Design Types
+                   Design Types
                   </p>
                   </a>
                   </li>

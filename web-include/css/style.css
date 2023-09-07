@@ -4572,6 +4572,7 @@ body.custom-background {
 }
 
 .copypress-custom-bg-1{
+	min-height: 90vh;
 	background-image: url(../photos/black-1.jpg);
 	background-position: center center;
 	background-size: cover;
