@@ -1,11 +1,11 @@
 <div class="card">
    <div class="card-header ">
-      <h3 class="card-title flot-left">Work List</h3>
-      <!-- <a href="<?php echo base_url('today-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Today Work List</button></a>
+      <!-- <h3 class="card-title flot-left">Work List</h3> -->
+      <a href="<?php echo base_url('today-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Today Work List</button></a>
       <a href="<?php echo base_url('upcoming-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Upcoming Work List</button></a>
       <a href="<?php echo base_url('done-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Done Work List</button></a>
       <a href="<?php echo base_url('cencel-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Canceled Work List</button></a>
-       -->
+      
       <div class="float-right">
          <button type="button"  data-toggle="modal" data-target="#modal-lg"
             class="btn flot-right mr-4 bg-gradient-primary"><i
@@ -20,7 +20,6 @@
                <th width="80" class="text-center">Date</th>
                <th width="80"class="text-center">Work</th>
                <th width="150" class="text-center">Details</th>
-               <th width="80" class="text-center">Action</th>
             </tr>
          </thead>
          <tbody>
@@ -30,15 +29,7 @@
                <td class="text-center"><?php echo $work['date']; ?></td>
                <td class="text-center"><?php echo $work['work']; ?></td>
                <td class="text-center"><?php echo $work['details']; ?></td>
-               <td class="text-center">
-                  <a href="<?php echo base_url(); ?>Admin/workDone/<?php echo $work['id']; ?>" class="done"><button type="button"
-                     class="btn  bg-gradient-success"><i
-                     class="fa fa-check"></i> Done</button></a>
-                  <a href="<?php echo base_url(); ?>Admin/workCancel/<?php echo $work['id']; ?>" 
-                     class="btn bg-gradient-danger cancel " >
-                  <i class="fa fa-times"></i> Cancel
-                  </a>
-               </td>
+              
             </tr>
             <?php } ?>
          </tbody>
@@ -49,64 +40,32 @@
    <div class="modal-dialog modal-lg">
       <div class="modal-content">
          <div class="modal-header bg-primary">
-            <h4 class="modal-title">Add Work</h4>
+            <h4 class="modal-title">Large Modal</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
          </div>
          <form action="Admin/workSubmit" id="work">
          <div class="modal-body row">
-            
-            <!-- <div class="col-6">
-               <label>Customer Name *</label>
-               <input type="text" class="form-control" name="name" value="" placeholder="Enter customer name">
+            <div class="col-4">
+               <label>Date </label>
+               <input class="form-control sf-form-control datepicker" type="date"  id="date" min="<?php echo date('Y-m-d');?>" name="date" datepicker="">
             </div>
-            <div class="col-6">
-                <label >Contact Number *</label>
-               <input type="text" class="form-control" maxlength="10" minlength="10" name="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="" placeholder="Enter contact number">
+            <div class="col-8">
+                <label >Work</label>
+               <input type="text" class="form-control" name="work" placeholder="Enter Work">
             </div>
-            <div class="col-6">
-                <label >Email</label>
-               <input type="email" class="form-control" name="email" value="" placeholder="Enter customer email (optional)">
-            </div>
-            <div class="col-6">
-                <label >Address *</label>
-               <input type="text" class="form-control" name="address" placeholder="Enter customer address">
-            </div> -->
-            <div class="col-6">
-               <label>Work Completion Date *</label>
-               <input class="form-control sf-form-control datepicker" type="date" required id="date" min="<?php echo date('Y-m-d');?>" name="date" datepicker="">
-            </div>
-            <div class="col-6">
-                <label >Work *</label>
-               <input type="text" class="form-control" name="work" required placeholder="Enter Work">
-            </div>
-            <div class="col-6">
-                <label >Total Cost *</label>
-               <input type="text" class="form-control" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter total cost of work">
-            </div>
-            <div class="col-6">
-                <label >Advance Payment *</label>
-               <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter advance payment of work">
-            </div>
-            <!-- <div class="col-6">
-                <label >Discount *</label>
-               <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter discount payment of work">
-            </div>
-            <div class="col-6">
-                <label >Remain Payment *</label>
-               <input type="text" class="form-control" disabled value="0" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
-            </div> -->
             <div class="col-12">
-                <label >Description *</label>
-                <textarea name="details" class="form-control" id="" placeholder="Describe customer's work" cols="10" rows="3"></textarea>
+                <label >Details</label>
+               <input type="text" class="form-control" name="details" placeholder="Describe your work">
             </div>
          </div>
          <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
          </div>
          </form>
+         
       </div>
    </div>
 </div>

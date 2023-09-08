@@ -38,23 +38,7 @@
          </table>
       </div>
    </div>
-   <script>
-   $(document).ready(function(){
-    $('.purchase-button').click(function(){
-        var id = $(this).data('id');
-        var title = $(this).data('title');
-        $('#pur').val(id);
-        $('#title').html(title);
-    });
-    $('.used-button').click(function(){
-        var id = $(this).data('id');
-        var title = $(this).data('title');
-        $('#use').val(id);
-        $('#u-title').html(title);
-    });
 
-});
-   </script>
    <div class="modal fade" id="purchase">
       <div class="modal-dialog">
          <div class="modal-content">
@@ -68,7 +52,7 @@
                <div class="modal-body">
                <div class="form-group">
                         <label >Purchase Quantity</label>
-                        <input type="text" class="form-control" name="plush" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Purchase Quantity">
+                        <input type="text" class="form-control" required name="plush" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Purchase Quantity">
                         </div>
                    <input type="hidden" id="pur" name="id" value="">
                   
@@ -95,7 +79,7 @@
                <div class="modal-body">
                <div class="form-group">
                         <label >Used Quantity</label>
-                        <input type="text" class="form-control" name="minus" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Used Quantity">
+                        <input type="text" class="form-control" required name="minus" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Used Quantity">
                         </div>
                    <input type="hidden" id="use" name="id" value="">
                </div>
@@ -109,6 +93,23 @@
       </div>
    </div>
 </section>
+<script>
+   $(document).ready(function(){
+    $('.purchase-button').click(function(){
+        var id = $(this).data('id');
+        var title = $(this).data('title');
+        $('#pur').val(id);
+        $('#title').html(title);
+    });
+    $('.used-button').click(function(){
+        var id = $(this).data('id');
+        var title = $(this).data('title');
+        $('#use').val(id);
+        $('#u-title').html(title);
+    });
+
+});
+   </script>
 <script>
    $(document).ready(function () {
     
@@ -139,7 +140,7 @@
                      text: "Your Request Sent Successfully",
                      icon: "success",
                  }).then(function () {
-                     window.location.href="<?php echo base_url('manage-stock'); ?>";
+                     window.location.href="<?php echo base_url('manage-product'); ?>";
                       });
              } else {
                  Swal.fire({
@@ -185,7 +186,7 @@
                      text: "Your Request Sent Successfully",
                      icon: "success",
                  }).then(function () {
-                     window.location.href="<?php echo base_url('manage-stock'); ?>";
+                     window.location.href="<?php echo base_url('manage-product'); ?>";
                       });
              } else {
                  Swal.fire({

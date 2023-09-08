@@ -69,7 +69,7 @@
                                         </li>
                             
                                         
-                                        <li class="menu-item ">
+                                        <!-- <li class="menu-item ">
                                             <a href="#">
                                                 <span>About</span>
                                             </a>
@@ -88,23 +88,23 @@
                                             </a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
-                                                    <?php foreach ($manu as $manu) { ?>
-                                                       
-                                                        <a href="<?php echo base_url('design/');echo $manu['url'];?> ">
-                                                            <span><?php echo $manu['type'];?></span>
-                                                        </a>
-                                                        <?php }?>
+                                                  
                                                 </li>
                                             </ul>
                                             
+                                        </li> -->
+                                        <?php foreach ($manu as $manu) { ?>
+                                        <li class="menu-item">
+                                        <a href="<?php echo base_url('design/');echo $manu['url'];?> ">
+                                                            <span><?php echo $manu['type'];?></span>
+                                                        </a>
                                         </li>
-                                    
+                                        <?php }?>
                                         <li class="menu-item">
                                             <a href="<?php echo base_url('contact-us');?>">
                                                 <span>Contacts</span>
                                             </a>
                                         </li>
-                                        
                                     </ul>
                                 </nav>
                                 <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">

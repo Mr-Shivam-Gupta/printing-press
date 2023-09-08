@@ -13,14 +13,14 @@
                      <div class="row">
                         <div class="col-6">
                         <div class="form-group">
-                        <label >Design Type</label>
-                        <input type="text" class="form-control" name="Dtype" value="<?php echo $desList->type;?>" placeholder="Ex. Poster">
+                        <label >Design Type (Manu)</label>
+                        <input type="text" class="form-control" required name="Dtype" value="<?php echo $desList->type;?>" placeholder="Ex. Poster">
                         </div>
                         </div>
                         <div class="col-6">
                         <div class="form-group">
                         <label >Url</label>
-                        <input type="text" class="form-control" name="url" value="<?php echo $desList->url;?>" placeholder="Ex. Poster-design" oninput="formatInput(this)">
+                        <input type="text" class="form-control" required name="url" value="<?php echo $desList->url;?>" placeholder="Ex. Poster-design" oninput="formatInput(this)">
                         </div>
                         </div>
                      </div>
@@ -35,14 +35,14 @@
                      <div class="row">
                         <div class="col-6">
                         <div class="form-group">
-                        <label >Design Type</label>
-                        <input type="text" class="form-control" name="Dtype"  placeholder="Ex. Poster">
+                        <label >Design Type (Manu)</label>
+                        <input type="text" class="form-control" required name="Dtype"  placeholder="Ex. Poster">
                         </div>
                         </div>
                         <div class="col-6">
                         <div class="form-group">
                         <label >Url</label>
-                        <input type="text" class="form-control" name="url" placeholder="Ex. Poster-design" oninput="formatInput(this)">
+                        <input type="text" class="form-control" required name="url" placeholder="Ex. Poster-design" oninput="formatInput(this)">
                         </div>
                         </div>
                      </div>
@@ -109,7 +109,7 @@
    
                Swal.fire({
                    title: "Confirmation",
-                   text: "Are you sure you want to delete this image?",
+                   text: "Are you sure you want to delete this design name?",
                    icon: "warning",
                    showCancelButton: true,
                    confirmButtonColor: "#3085d6",

@@ -4,7 +4,7 @@
          <div class="col-md-12">
             <div class="card card-default">
                <div class="card-header">
-                  <h3 class="card-title text-red">note: <small>Allow:(png, jpg, gif, jpeg), Max-Size:300MB, Max-Height:1024px, Max-Width:1024px</small></h3>
+                  <h3 class="card-title text-red">note: <small>Allow:(webp, png, jpg, gif, jpeg), Max-Size:500KB, Max-Height:2024px, Max-Width:2024px</small></h3>
                </div>
                <?php if ($edit == "edit") {  ?>
                <form  id ="Design-update" action="<?php echo base_url();?>Admin/imageUpdate/<?php echo $imgList->id;?>" method="post" enctype="multipart/form-data">
@@ -45,16 +45,11 @@
                         <div class="col-6">
                            <div class="form-group">
                               <label>Select Design Type</label>
-                              <select class="form-control" name="Dtype">
-                                 <option selected disabled>Select Type</option>
-                                 <?php  foreach ($des_data as $data) { ?>
-                                   
-                                    <option><?php echo $data['type'];?></option>
-                                    <?php }?>
-                                 <!-- <option>option 2</option>
-                                 <option>option 3</option>
-                                 <option>option 4</option>
-                                 <option>option 5</option> -->
+                              <select class="form-control" name="Dtype" required>
+                                 <option selected disabled value="">Select Type</option>
+                                 <?php foreach ($des_data as $data) { ?>
+                                    <option value="<?php echo $data['type']; ?>"><?php echo $data['type']; ?></option>
+                                 <?php } ?>
                               </select>
                            </div>
                         </div>
@@ -62,7 +57,7 @@
                            <div class="form-group">
                               <label>Select Designed Image</label>
                               <div class="custom-file">
-                                 <input type="file"  name="image" class="custom-file-input" id="customFile">
+                                 <input type="file"  required name="image" class="custom-file-input" id="customFile">
                                  <label class="custom-file-label" for="customFile">Select Image</label>
                               </div>
                            </div>
@@ -209,7 +204,7 @@
                   },
                   success: function (data) {
                       if (data == 1) {
-                          $("#Design-update")[0].reset();
+                        //   $("#Design-update")[0].reset();
                           Swal.fire({
                               title: "Successful",
                               text: "Your Request Sent Successfully",

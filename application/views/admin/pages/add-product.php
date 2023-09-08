@@ -14,13 +14,13 @@
                         <div class="col-6">
                         <div class="form-group">
                         <label >Product Name</label>
-                        <input type="text" class="form-control" name="product" value="<?php echo $desList->product;?>" placeholder="Ex. papers">
+                        <input type="text" class="form-control" required name="product" value="<?php echo $desList->product;?>" placeholder="Ex. papers">
                         </div>
                         </div>
                         <div class="col-6">
                         <div class="form-group">
                         <label >Required Quantity</label>
-                        <input type="text" class="form-control" name="quantity"  value="<?php echo $desList->quantity;?>" placeholder="Ex. 12 " onkeypress="return isNumberKey(event)" >
+                        <input type="text" class="form-control" required name="quantity"  value="<?php echo $desList->quantity;?>" placeholder="Ex. 12 " onkeypress="return isNumberKey(event)" >
                         </div>
                         </div>
                      </div>
@@ -36,13 +36,13 @@
                         <div class="col-6">
                         <div class="form-group">
                         <label >Product Name</label>
-                        <input type="text" class="form-control" name="product"  placeholder="Ex. papers">
+                        <input type="text" class="form-control" required name="product"  placeholder="Ex. papers">
                         </div>
                         </div>
                         <div class="col-6">
                         <div class="form-group">
                         <label >Required Quantity</label>
-                        <input type="text" class="form-control" name="quantity" placeholder="Ex. 12" onkeypress="return isNumberKey(event)" >
+                        <input type="text" class="form-control" required name="quantity" placeholder="Ex. 12" onkeypress="return isNumberKey(event)" >
                         </div>
                         </div>
                      </div>
@@ -115,7 +115,7 @@ function isNumberKey(evt) {
    
                Swal.fire({
                    title: "Confirmation",
-                   text: "Are you sure you want to delete this image?",
+                   text: "Are you sure you want to delete this product?",
                    icon: "warning",
                    showCancelButton: true,
                    confirmButtonColor: "#3085d6",
@@ -157,7 +157,7 @@ function isNumberKey(evt) {
                        text: "Your Request Sent Successfully",
                        icon: "success",
                    }).then(function () {
-                       window.location.href="<?php echo base_url('add-stock'); ?>";
+                       window.location.href="<?php echo base_url('add-product'); ?>";
                         });
                } else {
                    Swal.fire({
@@ -203,7 +203,7 @@ function isNumberKey(evt) {
                        text: "Your Request Sent Successfully",
                        icon: "success",
                    }).then(function () {
-                       window.location.href="<?php echo base_url('add-stock'); ?>";
+                       window.location.href="<?php echo base_url('add-product'); ?>";
                         });
                } else {
                    Swal.fire({

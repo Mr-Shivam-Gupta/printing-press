@@ -58,11 +58,17 @@ $route['designs'] = 'welcome/designs';
 $route['design/(:any)'] = 'welcome/DesignsDetails';
 
 $route['admin-dashboard'] = 'admin';
+$route['logout'] = 'admin/logout';
 $route['upload'] = 'admin/upload';
 $route['design-type'] = 'admin/DesignType';
 $route['manage-product'] = 'admin/manageStock';
 $route['add-product'] = 'admin/addStock';
 $route['work-list'] = 'admin/workLIst';
+$route['done-work'] = 'admin/doneWork';
+$route['cencel-work'] = 'admin/cencelWork';
+$route['today-work'] = 'admin/todayWork';
+$route['upcoming-work'] = 'admin/upcomingWork';
+$route['add-customer'] = 'admin/addCustomer';
 
 
 $route['404_override'] = '';

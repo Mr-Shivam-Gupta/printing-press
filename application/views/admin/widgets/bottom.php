@@ -10,13 +10,14 @@ All rights reserved.
 
 
 
-<script src="<?php echo base_url('web-include/admin/');?>plugins/jquery-ui/jquery-ui.min.js"></script>
 
 <script> 
-
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 
+<script src="<?php echo base_url('web-include/admin/');?>plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url('web-include/admin/');?>dist/js/adminlte.js?v=3.2.0"></script>
+<script src="<?php echo base_url('web-include/admin/');?>plugins/jquery-ui/jquery-ui.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/chart.js/Chart.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/sparklines/sparkline.js"></script>
@@ -29,7 +30,6 @@ All rights reserved.
 <script src="<?php echo base_url('web-include/admin/');?>plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/summernote/summernote-bs4.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<script src="<?php echo base_url('web-include/admin/');?>dist/js/adminlte.js?v=3.2.0"></script>
 <script src="<?php echo base_url('web-include/admin/');?>dist/js/pages/dashboard.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/dropzone/min/dropzone.min.js"></script>
 
@@ -39,7 +39,7 @@ All rights reserved.
 <script src="<?php echo base_url('web-include/admin/');?>plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/bs-stepper/js/bs-stepper.min.js"></script>
-<script src="<?php echo base_url('web-include/admin/');?>dist/js/adminlte.min.js?v=3.2.0"></script>
+
 
 <script src="<?php echo base_url('web-include/admin/');?>plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -52,7 +52,7 @@ All rights reserved.
 <script src="<?php echo base_url('web-include/admin/');?>plugins/pdfmake/vfs_fonts.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/js/buttons.colVis.min.js"></script> 
 
 
 <script>

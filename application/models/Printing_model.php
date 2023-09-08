@@ -52,7 +52,18 @@ class Printing_model extends CI_Model
 		return $result;
 		}
  }
-
+ 	public function customerSubmit($tbl,$formData=""){
+		if ($formData != ""){
+			$result =$this->db->insert($tbl,$formData);
+			return $result;
+			}
+	}
+ 	public function customerEdit($tbl,$id,$formData=""){
+		if ($formData != ""){
+			$result =$this->db->where(['id'=>$id])->update($tbl,$formData);
+			return $result;
+			}
+	}
 
 
 }
