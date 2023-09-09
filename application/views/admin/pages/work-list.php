@@ -20,7 +20,8 @@
                <th width="80" class="text-center">Date</th>
                <th width="80"class="text-center">Work</th>
                <th width="150" class="text-center">Details</th>
-               <th width="80" class="text-center">Action</th>
+               <th width="50" class="text-center">Customer</th>
+               <th width="80" class="text-center">action</th>
             </tr>
          </thead>
          <tbody>
@@ -30,6 +31,11 @@
                <td class="text-center"><?php echo $work['date']; ?></td>
                <td class="text-center"><?php echo $work['work']; ?></td>
                <td class="text-center"><?php echo $work['details']; ?></td>
+               <?php $customer = $this->db->get_where('customer_tbl',['id'=>$work['customer_id']])->row();?>
+               <td class="text-center"><?php 
+               if (isset($customer)) {
+                echo $customer->customer;
+               }; ?></td>
                <td class="text-center">
                   <a href="<?php echo base_url(); ?>Admin/workDone/<?php echo $work['id']; ?>" class="done"><button type="button"
                      class="btn  bg-gradient-success"><i
@@ -73,7 +79,21 @@
                 <label >Address *</label>
                <input type="text" class="form-control" name="address" placeholder="Enter customer address">
             </div> -->
-            <div class="col-6">
+                <div class="col-6"> 
+                <div class="form-group" data-select2-id="95">
+                <label>Customer Name & Customer Contact </label>
+                <select class="form-control select2bs4 select2-hidden-accessible" name="c_id" required style="width: 100%;">
+                <option selected="selected" disabled value="">Please select customer name</option>
+                <?php foreach ($customer as  $customer) { ?>
+                    <option value="<?php echo $customer['id'];?>"><?php echo $customer['customer']." - ".$customer['phone']; ?></option>
+               <?php }?>
+                
+                
+                </select>
+                </div>
+                </div>
+            
+        <div class="col-6">
                <label>Work Completion Date *</label>
                <input class="form-control sf-form-control datepicker" type="date" required id="date" min="<?php echo date('Y-m-d');?>" name="date" datepicker="">
             </div>
@@ -88,7 +108,7 @@
             <div class="col-6">
                 <label >Advance Payment *</label>
                <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter advance payment of work">
-            </div>
+            </div> 
             <!-- <div class="col-6">
                 <label >Discount *</label>
                <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter discount payment of work">

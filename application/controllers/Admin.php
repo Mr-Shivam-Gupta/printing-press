@@ -146,6 +146,7 @@ class Admin extends CI_Controller
     public function workLIst()
     {
         $data["page_name"] = "work-list";
+        $data["customer"] = $this->db->get('customer_tbl')->result_array();
         $data["works"] = $this->db
             ->order_by("id", "DESC")
             ->get_where("work_tbl", ["status" => "0"])
@@ -155,21 +156,23 @@ class Admin extends CI_Controller
 
     public function workSubmit()
     {
+         
         if ($this->input->post()) {
             $this->form_validation->set_rules("date", "date", "trim|required");
             $this->form_validation->set_rules("work", "work", "trim|required");
-            $this->form_validation->set_rules(
-                "details",
-                "details",
-                "trim|required"
-            );
+            $this->form_validation->set_rules("details", "details", "trim|required");
+            $this->form_validation->set_rules("cost", "cost", "trim|required");
+            $this->form_validation->set_rules("advance", "advance", "trim|required");
             if ($this->form_validation->run() == false) {
                 echo "Validation error";
             } else {
                 $formData = [
+                    "customer_id" => $this->input->post("c_id"),
                     "date" => $this->input->post("date"),
                     "work" => $this->input->post("work"),
                     "details" => $this->input->post("details"),
+                    "cost" => $this->input->post("cost"),
+                    "advance" => $this->input->post("advance"),
                     "ip_address" => $this->input->ip_address(),
                     "browser" => $this->agent->browser(),
                     "create_date" => date("y-m-d H:i:s"),

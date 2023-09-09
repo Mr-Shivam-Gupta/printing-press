@@ -18,6 +18,16 @@
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
       <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+      
+
+
+
+
+
+<link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+<link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/bs-stepper/css/bs-stepper.min.css">
+      <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/select2/css/select2.min.css">
+      <link rel="stylesheet" href="<?php echo base_url('web-include/admin/');?>plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
       <script nonce="41811315-e252-4064-a709-c657409c672c">

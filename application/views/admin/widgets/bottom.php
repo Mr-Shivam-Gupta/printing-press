@@ -33,6 +33,7 @@ All rights reserved.
 <script src="<?php echo base_url('web-include/admin/');?>dist/js/pages/dashboard.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/dropzone/min/dropzone.min.js"></script>
 
+<script src="<?php echo base_url('web-include/admin/');?>plugins/select2/js/select2.full.min.js"></script>
 
 <script src="<?php echo base_url('web-include/admin/');?>plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <script src="<?php echo base_url('web-include/admin/');?>plugins/inputmask/jquery.inputmask.min.js"></script>
