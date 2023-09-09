@@ -1,11 +1,11 @@
 <div class="card">
    <div class="card-header ">
-      <h3 class="card-title flot-left">Work List</h3>
-      <!-- <a href="<?php echo base_url('today-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Today Work List</button></a>
+      <!-- <h3 class="card-title flot-left">Work List</h3> -->
+      <a href="<?php echo base_url('today-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Today Work List</button></a>
       <a href="<?php echo base_url('upcoming-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Upcoming Work List</button></a>
       <a href="<?php echo base_url('done-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Done Work List</button></a>
-      <a href="<?php echo base_url('cencel-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Canceled Work List</button></a>
-       -->
+      <!-- <a href="<?php echo base_url('cencel-work');?>"><button type="button" class="btn flot-right mr-4 bg-gradient-info">Canceled Work List</button></a> -->
+      
       <div class="float-right">
          <button type="button"  data-toggle="modal" data-target="#modal-lg"
             class="btn flot-right mr-4 bg-gradient-primary"><i
@@ -16,33 +16,33 @@
       <table id="example1" class="table table-bordered table-striped">
          <thead>
             <tr>
-               <th width="20" class="text-center">S.No</th>
-               <th width="80" class="text-center">Date</th>
-               <th width="80"class="text-center">Work</th>
-               <th width="150" class="text-center">Details</th>
-               <th width="50" class="text-center">Customer</th>
-               <th width="80" class="text-center">action</th>
+               <th width="10" class="text-center">S.No</th>
+               <th width="50" class="text-center">Name</th>
+               <th width="50"class="text-center">Number</th>
+               <th width="80" class="text-center">Work</th>
+               <th width="50" class="text-center">Date</th>
+               <th width="100" class="text-center">action</th>
             </tr>
          </thead>
          <tbody>
              <?php $i=1; foreach ($works as $work) { ?>
-            <tr>
-               <td class="text-center"><?php  echo $i++; ?></td>
-               <td class="text-center"><?php echo $work['date']; ?></td>
-               <td class="text-center"><?php echo $work['work']; ?></td>
-               <td class="text-center"><?php echo $work['details']; ?></td>
-               <?php $customer = $this->db->get_where('customer_tbl',['id'=>$work['customer_id']])->row();?>
-               <td class="text-center"><?php 
-               if (isset($customer)) {
-                echo $customer->customer;
-               }; ?></td>
+                <?php $customer = $this->db->get_where('customer_tbl',['id'=>$work['customer_id']])->row();?>
+                <tr>
+                    <td class="text-center"><?php  echo $i++; ?></td>
+                    <td class="text-center"><?php if (isset($customer)) { echo $customer->customer;}; ?></td>
+                    <td class="text-center"><?php if (isset($customer)) { echo $customer->phone;}; ?></td>
+                    <td class="text-center"><?php echo $work['work']; ?></td>
+                    <td class="text-center"><?php echo $work['date']; ?></td>
                <td class="text-center">
-                  <a href="<?php echo base_url(); ?>Admin/workDone/<?php echo $work['id']; ?>" class="done"><button type="button"
+                  <a href="<?php echo base_url(); ?>Admin/workView/<?php echo $work['id']; ?>"><button type="button" title="View"
+                     class="btn  bg-gradient-primary"><i
+                     class="fas fa-eye"></i> </button></a>
+                  <a href="<?php echo base_url(); ?>Admin/workDone/<?php echo $work['id']; ?>" class="done"><button type="button" title="Done"
                      class="btn  bg-gradient-success"><i
-                     class="fa fa-check"></i> Done</button></a>
-                  <a href="<?php echo base_url(); ?>Admin/workCancel/<?php echo $work['id']; ?>" 
+                     class="fa fa-check"></i> </button></a>
+                  <a href="<?php echo base_url(); ?>Admin/workCancel/<?php echo $work['id']; ?>" title="Cencel"
                      class="btn bg-gradient-danger cancel " >
-                  <i class="fa fa-times"></i> Cancel
+                  <i class="fa fa-times"></i> 
                   </a>
                </td>
             </tr>
@@ -84,9 +84,9 @@
                 <label>Customer Name & Customer Contact </label>
                 <select class="form-control select2bs4 select2-hidden-accessible" name="c_id" required style="width: 100%;">
                 <option selected="selected" disabled value="">Please select customer name</option>
-                <?php foreach ($customer as  $customer) { ?>
+                <?php foreach ($customers as  $customer) { ?>
                     <option value="<?php echo $customer['id'];?>"><?php echo $customer['customer']." - ".$customer['phone']; ?></option>
-               <?php }?>
+               <?php  }?>
                 
                 
                 </select>
@@ -102,13 +102,17 @@
                <input type="text" class="form-control" name="work" required placeholder="Enter Work">
             </div>
             <div class="col-6">
-                <label >Total Cost *</label>
-               <input type="text" class="form-control" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter total cost of work">
-            </div>
-            <div class="col-6">
-                <label >Advance Payment *</label>
-               <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter advance payment of work">
-            </div> 
+        <label>Total Cost *</label>
+        <input type="text" class="form-control" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  required placeholder="Enter total cost of work">
+        </div>
+        <div class="col-6">
+            <label>Advance Payment *</label>
+            <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  required placeholder="Enter advance payment of work">
+        </div>
+        <div class="col-6">
+            <label>Remaining Payment *</label>
+            <input type="text" class="form-control" disabled name="remain" required value="0.00">
+        </div>
             <!-- <div class="col-6">
                 <label >Discount *</label>
                <input type="text" class="form-control" name="advance" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="Enter discount payment of work">
@@ -132,6 +136,20 @@
 </div>
 
 <script>
+     $(document).ready(function() {
+            // Function to update the remaining payment
+            function updateRemainingPayment() {
+                var totalCost = parseFloat($("input[name='cost']").val()) || 0;
+                var advancePayment = parseFloat($("input[name='advance']").val()) || 0;
+                var remainingPayment = totalCost - advancePayment;
+
+                // Update the Remaining Payment field
+                $("input[name='remain']").val(remainingPayment.toFixed(2));
+            }
+
+            // Attach the updateRemainingPayment function to the input fields' input event
+            $("input[name='cost'], input[name='advance']").on("input", updateRemainingPayment);
+        });
         $(document).ready(function () {
       
       $(".done").click(function(event) {
@@ -142,7 +160,7 @@
                Swal.fire({
                    title: "Confirmation",
                    text: "Has this work been completed?",
-                   icon: "warning",
+                   icon: "info",
                    showCancelButton: true,
                    confirmButtonColor: "#28a745",
                    cancelButtonColor: "#d33",

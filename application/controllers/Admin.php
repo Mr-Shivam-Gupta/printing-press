@@ -42,22 +42,31 @@ class Admin extends CI_Controller
             if ($this->form_validation->run() == false) {
                 echo "Please fill all required(*) fields";
             } else {
-                $formData = [
-                    "customer" => $this->input->post("name"),
-                    "phone" => $this->input->post("number"),
-                    "email" => $this->input->post("email"),
-                    "address" => $this->input->post("address"),
-                    "ip_address" => $this->input->ip_address(),
-                    "browser" => $this->agent->browser(),
-                    "create_date" => date("y-m-d H:i:s"),
-                ];
-                $submit = $this->Printing_model->customerSubmit(
-                    "customer_tbl",
-                    $formData
-                );
-                if ($submit == true) {
-                    echo "1";
+                $phone = $this->input->post("number");
+                $email = $this->input->post("email");
+                $customerNumber = $this->db->get_where('customer_tbl',['phone'=>$phone])->num_rows();
+                $customerEmail = $this->db->get_where('customer_tbl',['email'=>$email])->num_rows();
+                if ($customerNumber > 0) {
+                    echo 'This number already exits! ';
+                }else{
+                    $formData = [
+                        "customer" => $this->input->post("name"),
+                        "phone" => $phone,
+                        "email" => $email,
+                        "address" => $this->input->post("address"),
+                        "ip_address" => $this->input->ip_address(),
+                        "browser" => $this->agent->browser(),
+                        "create_date" => date("y-m-d H:i:s"),
+                    ];
+                    $submit = $this->Printing_model->customerSubmit(
+                        "customer_tbl",
+                        $formData
+                    );
+                    if ($submit == true) {
+                        echo "1";
+                    }
                 }
+                
             }
         } else {
             echo "Please fill all required(*) fields";
@@ -146,11 +155,16 @@ class Admin extends CI_Controller
     public function workLIst()
     {
         $data["page_name"] = "work-list";
-        $data["customer"] = $this->db->get('customer_tbl')->result_array();
+        $data["customers"] = $this->db->get('customer_tbl')->result_array();
         $data["works"] = $this->db
             ->order_by("id", "DESC")
             ->get_where("work_tbl", ["status" => "0"])
             ->result_array();
+        $this->load->view("admin/index", $data);
+    }
+    public function workView($id){
+        $data["page_name"] = "work-view";
+        $data["works"] = $this->db->get_where("work_tbl", ["id" => $id])->row_array();
         $this->load->view("admin/index", $data);
     }
 
@@ -633,6 +647,16 @@ class Admin extends CI_Controller
         $data = ["status" => "2"];
         $this->db->where(["id" => $id])->update("work_tbl", $data);
         redirect("work-list");
+    }
+    public function deliverd($id)
+    {
+        
+        $data = [
+            "is_delivered" => "1",
+            "delivered_date" => date("y-m-d H:i:s"),
+    ];
+        $this->db->where(["id" => $id])->update("work_tbl", $data);
+        redirect("Admin/workView/".$id);
     }
 
     public function logout()

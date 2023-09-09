@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Log in</title>
 
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-
   <link rel="stylesheet" href="<?php echo base_url('');?>web-include/admin/plugins/fontawesome-free/css/all.min.css">
-
   <link rel="stylesheet" href="<?php echo base_url('');?>web-include/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-
   <link rel="stylesheet" href="<?php echo base_url('');?>web-include/admin/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
@@ -71,7 +67,7 @@
   </div>
 </div>
 
-
+<div class="d-flex mt-3"> <a href="<?php echo base_url('');?>"><button type="submit" class="btn btn-dark btn-block">Go Back to Home</button> </a></div>
 
 <script src="<?php echo base_url('');?>web-include/admin/plugins/jquery/jquery.min.js"></script>
 
