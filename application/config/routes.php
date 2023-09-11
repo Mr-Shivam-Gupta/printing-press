@@ -58,6 +58,7 @@ $route['designs'] = 'welcome/designs';
 $route['design/(:any)'] = 'welcome/DesignsDetails';
 
 $route['admin-dashboard'] = 'admin';
+$route['dashboard'] = 'admin/dashboard';
 $route['logout'] = 'admin/logout';
 $route['upload'] = 'admin/upload';
 $route['design-type'] = 'admin/DesignType';

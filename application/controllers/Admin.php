@@ -16,7 +16,30 @@ class Admin extends CI_Controller
 
     public function index()
     {
+        $data["page_name"] = "admin-dashboard";
+        $data["D_type_count"] =$this->db->get('design_tbl')->num_rows();
+        $data["Image_count"] =$this->db->get('image_tbl')->num_rows();
+        $data["Product_count"] =$this->db->get('stock_tbl')->num_rows();
+        $data["upcoming_work_count"] = $this->db->get_where("work_tbl", ["status" => "0","date >" => date("Y-m-d"),])->num_rows();
+        $data["current_month_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1","YEAR(date)" => date("Y"),"MONTH(date)" => date("m")])->num_rows();
+        $data["last_month_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1","YEAR(date)" => date("Y", strtotime("last month")),"MONTH(date)" => date("m", strtotime("last month"))])->num_rows();
+        $data["deliverd_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1"])->num_rows();
+        $data["works"] = $this->db->get_where("work_tbl", ["status" => "0"])->result_array();
+         $data["products"] = $this->db->get('stock_tbl')->result_array();
+
+        $this->load->view("admin/index", $data);
+    }
+    public function dashboard()
+    {
         $data["page_name"] = "dashboard";
+        $data["D_type_count"] =$this->db->get('design_tbl')->num_rows();
+        $data["Image_count"] =$this->db->get('image_tbl')->num_rows();
+        $data["Product_count"] =$this->db->get('stock_tbl')->num_rows();
+        $data["upcoming_work_count"] = $this->db->get_where("work_tbl", ["status" => "0","date >" => date("Y-m-d"),])->num_rows();
+        $data["current_month_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1","YEAR(date)" => date("Y"),"MONTH(date)" => date("m")])->num_rows();
+        $data["last_month_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1","YEAR(date)" => date("Y", strtotime("last month")),"MONTH(date)" => date("m", strtotime("last month"))])->num_rows();
+        $data["deliverd_count"] = $this->db->get_where("work_tbl",["is_delivered" => "1"])->num_rows();
+        $data["works"] = $this->db->get_where("work_tbl", ["status" => "0"])->result_array();
         $this->load->view("admin/index", $data);
     }
     public function addCustomer()

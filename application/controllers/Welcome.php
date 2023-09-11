@@ -10,21 +10,24 @@ class Welcome extends CI_Controller
 		$this->load->model('Printing_model');
 		date_default_timezone_set('Asia/Kolkata');
 	}
-
+	
 	public function index()
 	{
 		$data['manu'] = $this->db->get('design_tbl')->result_array();
+	
 		$this->load->view('index',$data);
 	}
 	public function designs()
 	{
 		$data['manu'] = $this->db->get('design_tbl')->result_array();
+	
 		$this->load->view('designs', $data);
 	}
 	
 	public function DesignsDetails()
 	{
 		$data['manu'] = $this->db->get('design_tbl')->result_array();
+	
 		$segment= $this->uri->segment(2);
 		$data['urlDetails'] = $this->db->get_where('design_tbl', array('url' => $segment))->row();
 		$type = $data['urlDetails']->type;
@@ -34,6 +37,7 @@ class Welcome extends CI_Controller
 	public function contact()
 	{
 		$data['manu'] = $this->db->get('design_tbl')->result_array();
+	
 		$this->load->view('contact',$data);
 	}
 	public function login()

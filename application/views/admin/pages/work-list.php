@@ -32,7 +32,7 @@
                     <td class="text-center"><?php if (isset($customer)) { echo $customer->customer;}; ?></td>
                     <td class="text-center"><?php if (isset($customer)) { echo $customer->phone;}; ?></td>
                     <td class="text-center"><?php echo $work['work']; ?></td>
-                    <td class="text-center"><?php echo $work['date']; ?></td>
+                    <td class="text-center"><?php echo  date('d-m-Y', strtotime($work['date'])); ?></td>
                <td class="text-center">
                   <a href="<?php echo base_url(); ?>Admin/workView/<?php echo $work['id']; ?>"><button type="button" title="View"
                      class="btn  bg-gradient-primary"><i

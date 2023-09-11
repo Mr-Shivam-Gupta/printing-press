@@ -60,7 +60,7 @@
         <?php }?>
       
         <div class="mx-2">
-            <a type="button" href="<?php if ($works['status'] == '1'){echo base_url('done-work');} else {echo base_url('work-list'); }?>" class="btn btn-block btn-dark" >Back to List</a>
+            <a type="button" href="<?php if ($works['status'] == '1'){echo base_url('done-work');} else {echo base_url('work-list'); }?>" class="btn btn-block btn-dark" >Go to Work List</a>
         </div>                                
     </div>
 </div>

@@ -93,18 +93,19 @@
                                             </ul>
                                             
                                         </li> -->
-                                        <?php foreach ($manu as $manu) { ?>
+                                        <?php foreach ($manu as $manu_item) {  ?>
                                         <li class="menu-item">
-                                        <a href="<?php echo base_url('design/');echo $manu['url'];?> ">
-                                                            <span><?php echo $manu['type'];?></span>
+                                        <a href="<?php echo base_url('design/');echo $manu_item['url'];?> ">
+                                                            <span><?php echo $manu_item['type'];?></span>
                                                         </a>
                                         </li>
-                                        <?php }?>
-                                        <li class="menu-item">
+                                        <?php ; }?>
+                                      
+                                        <!-- <li class="menu-item">
                                             <a href="<?php echo base_url('contact-us');?>">
                                                 <span>Contacts</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </nav>
                                 <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
@@ -187,194 +188,17 @@
                                     </a>
                                 
                                 </li>
-                                <!-- /Menu item : Home -->
-                                <!-- Menu item : Features -->
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">
-                                        <span>Features</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <!-- Menu item : Tools -->
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Tools</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Typography</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Shortcodes</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- /Menu item : Tools -->
-                                        <!-- Menu item : Pages -->
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Pages</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Our Team</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Team Member</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">
-                                                        <span>Gallery</span>
-                                                    </a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Gallery Grid</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Gallery Cobbles</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">
-                                                                <span>Gallery Masonry</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- /Menu item : Pages -->
-                                        <!-- Menu item : Support -->
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Support</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Support</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>Video Tutorials</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- /Menu item : Support -->
-                                    </ul>
-                                </li>
-                                <!-- /Menu item : Features -->
-                                <!-- Menu item : About -->
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">
-                                        <span>About</span>
-                                    </a>
-                                    <ul class="sub-menu">
+                                <?php foreach ($manu as $manu_item) {  ?>
                                         <li class="menu-item">
-                                            <a href="#">
-                                                <span>Style 1</span>
-                                            </a>
+                                        <a href="<?php echo base_url('design/');echo $manu_item['url'];?> ">
+                                                            <span><?php echo $manu_item['type'];?></span>
+                                                        </a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="#">
-                                                <span>Style 2</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- /Menu item : About -->
-                                <!-- Menu item : Services -->
-                                <li class="menu-item">
-                                    <a href="#">
-                                        <span>Services</span>
-                                    </a>
-                                </li>
-                                <!-- /Menu item : Services -->
-                                <!-- Menu item : Blog -->
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">
-                                        <span>Blog</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="#">
-                                                <span>Streampage</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Classic Style</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>2 Columns</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>3 Columns</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">
-                                                <span>Chess Style</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>2 Columns</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>4 Columns</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">
-                                                        <span>6 Columns</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- /Menu item : Blog -->
-                                <!-- Menu item : Contacts -->
-                                <li class="menu-item">
-                                    <a href="#">
-                                        <span>Contacts</span>
-                                    </a>
-                                </li>
-                                <!-- /Menu item : Contacts -->
+                                        <?php ; }?>
+                               
                             </ul>
                         </nav>
-                        <!-- Search -->
-                        <div class="search_wrap search_style_normal search_mobile">
-                            <div class="search_form_wrap">
-                                <form role="search" method="get" class="search_form" action="#">
-                                    <input type="text" class="search_field" placeholder="Search" value="" name="s">
-                                    <button type="submit" class="search_submit trx_addons_icon-search"></button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- /Search -->
-                        <!-- Socials -->
+                  
                         <div class="socials_mobile">
                             <span class="social_item">
                                 <a href="#" target="_blank" class="social_icons social_twitter">
