@@ -1,6 +1,13 @@
 
 <?php  include('common/header.php')?>
 
+
+
+   
+        
+
+   
+
                 <div class="page_content_wrap scheme_default">
                   
                     <div class="content">
@@ -251,4 +258,5 @@
                         </article>
                     </div>
                 </div>
+
 		<?php  include('common/footer.php')?>

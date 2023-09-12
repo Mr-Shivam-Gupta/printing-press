@@ -153,6 +153,14 @@
                         </li>
                      </ul>
                   </li>
+                  <li class="nav-item">
+                     <a href="<?php echo base_url('enquiry-details');?>" class="nav-link">
+                     <i class="nav-icon fas fa-paste"></i>
+                        <p>
+                        Enquiry Details
+                        </p>
+                     </a>
+                  </li>
                </ul>
             </nav>
          </div>

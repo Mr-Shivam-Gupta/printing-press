@@ -54,6 +54,7 @@ $route['admin-login'] = 'welcome/login';
 $route['user-authentication'] = 'welcome/userAuthentication';
 $route['contact-us'] = 'welcome/contact';
 $route['designs'] = 'welcome/designs';
+$route['contact-form'] = 'welcome/contactForm';
 
 $route['design/(:any)'] = 'welcome/DesignsDetails';
 
@@ -70,6 +71,7 @@ $route['cencel-work'] = 'admin/cencelWork';
 $route['today-work'] = 'admin/todayWork';
 $route['upcoming-work'] = 'admin/upcomingWork';
 $route['add-customer'] = 'admin/addCustomer';
+$route['enquiry-details'] = 'admin/enquiry';
 
 
 $route['404_override'] = '';

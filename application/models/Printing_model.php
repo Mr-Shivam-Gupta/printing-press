@@ -28,6 +28,12 @@ class Printing_model extends CI_Model
 			return $result;
 			}
  }
+ public function  contactForm($tbl,$formData=""){
+			if ($formData != ""){
+			$result =$this->db->insert('enquiry_tbl',$formData);
+			return $result;
+			}
+ }
  public function  productSubmit($tbl,$formData=""){
 			if ($formData != ""){
 			$result =$this->db->insert('stock_tbl',$formData);

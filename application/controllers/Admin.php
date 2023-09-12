@@ -42,6 +42,12 @@ class Admin extends CI_Controller
         $data["works"] = $this->db->get_where("work_tbl", ["status" => "0"])->result_array();
         $this->load->view("admin/index", $data);
     }
+    public function enquiry()
+    {
+        $data["page_name"] = "enquiry-details";
+        $data["enquiry"] = $this->db->order_by('id','DESC')->get("enquiry_tbl")->result_array();
+        $this->load->view("admin/index", $data);
+    }
     public function addCustomer()
     {
         $data["page_name"] = "add-customer";

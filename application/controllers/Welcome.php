@@ -44,6 +44,35 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view('admin/login');
 	}
+	public function contactForm(){
+		if ($this->input->post()) {
+			$this->form_validation->set_rules('name', 'name', 'trim|required');
+			$this->form_validation->set_rules('contact', 'contact', 'trim|required');
+			$this->form_validation->set_rules('address', 'address', 'trim|required');
+			$this->form_validation->set_rules('message', 'message', 'trim|required');
+			if ($this->form_validation->run() == false){
+				echo "Please fill all required filed";
+			}else{
+				$formData = [
+					'name'=> $this->input->post('name'),
+					'email'=> $this->input->post('email'),
+					'contact'=> $this->input->post('contact'),
+					'address'=> $this->input->post('address'),
+					'message'=> $this->input->post('message'),
+					"ip_address" => $this->input->ip_address(),
+					"browser" => $this->agent->browser() . ' ' . $this->agent->version(),
+					"create_date" => date("y-m-d H:i:s"),
+				];
+				$submit = $this->Printing_model->contactForm("enquiry_tbl",$formData);
+				if ($submit == true) {
+					echo "1";
+				}
+			}
+			
+		}else{
+			echo "Please fill all required filed ";
+		}
+	}
 	public function userAuthentication()
 	{
 		$data['title'] = "User Authentication";

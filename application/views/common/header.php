@@ -3,7 +3,7 @@
 <head>
         <title>press</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
 
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>js/vendor/essential-grid/css/settings.css" type="text/css" media="all" />
@@ -30,23 +30,104 @@
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/responsive.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo base_url('web-include/');?>css/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <script src="<?php echo base_url('web-include/js/jquery.js');?>"></script>
+        <script src="<?php echo base_url('web-include/js/sweetalert.js');?>"></script>
 
         <link rel="icon" href="<?php echo base_url('web-include/');?>logo.jpg" sizes="32x32" />
         <link rel="icon" href="<?php echo base_url('web-include/');?>logo.jpg" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('web-include/');?>images/cropped-favicon-180x180.png" />
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    @media only screen and (max-width: 600px) and (min-width: 400px) {
+        .popup-content {
+            background-color: #fff;
+            position: relative;
+            top: 10% !important;
+            left: 50%; 
+            transform: translateX(-50%); 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 90%;
+        }
+    }
+
+    .popup-content {
+        background-color: #fff;
+        position: relative;
+        top: 15%;
+        left: 50%; 
+        transform: translateX(-50%); 
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        max-width: 500px; 
+        width: 90%;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: auto !important;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>   
     </head>
-	<body class="home page custom-background body_tag scheme_default body_style_wide blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-18 header_position_default menu_style_top no_layout">
-        
+	<body class="home page custom-background body_tag scheme_default body_style_wide blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-18 header_position_default menu_style_top no_layout"> 
         <div class="body_wrap">
-            
             <div class="page_wrap">
-              
                 <header class="top_panel top_panel_custom top_panel_custom_18 without_bg_image scheme_default" style="background-color: black;">
-                  
                     <div class="top_panel_container sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_delimiter sc_layouts_row_fixed" style="background-color: black;">
                         <div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left">
-                           
                             <div class="sc_content sc_content_default sc_float_left sc_align_left">
                                 <div class="sc_content_container">
                                     <div class="">
@@ -174,14 +255,12 @@
                     </div>
                    
                 </header>
-                <!-- Menu mobile -->
                 <div class="menu_mobile_overlay"></div>
                 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
                     <div class="menu_mobile_inner">
                         <a class="menu_mobile_close icon-cancel"></a>
                         <nav class="menu_mobile_nav_area">
                             <ul id="menu_mobile-main-menu" class="">
-                                <!-- Menu item : Home -->
                                 <li class="menu-item current-menu-ancestor current-menu-parent ">
                                     <a href="<?php echo base_url('');?>">
                                         <span>Home</span>
@@ -218,7 +297,5 @@
                                 </a>
                             </span>
                         </div>
-                        <!-- /Socials -->
                     </div>
                 </div>
-                <!-- /Menu mobile -->
